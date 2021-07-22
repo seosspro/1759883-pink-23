@@ -1,7 +1,7 @@
-# Личный проект «Пинк» 
+# Личный проект «Пинк»
 
-* Студент: [Дмитрий Крылов](https://up.htmlacademy.ru/adaptive/23/user/1759883).
-* Наставник: `Неизвестно`.
+- Студент: [Дмитрий Крылов](https://up.htmlacademy.ru/adaptive/23/user/1759883).
+- Наставник: [Михаил Поданев](https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
