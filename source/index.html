@@ -64,9 +64,7 @@
         <h1 class="visually-hidden">"Пинк"</h1>
         <section class="main-info">
             <div class="container">
-                <div class="main-info__slogan">
-                    <p class="main-info__text">Взгляните на жизнь иначе!</p>
-                </div>
+                <p class="main-info__slogan">Взгляните на жизнь иначе!</p>
                 <a class="main-info__link" href="">Скачать приложение</a>
                 <div class="main-info__link">
                     <a href="">App Store</a>
@@ -80,9 +78,12 @@
         </section>
         <section class="offer">
             <div class="offer__inner">
-                <h2 class="offer__slogan">
-                    Устали от серости мегаполиса? Нам есть, что вам предложить!
-                </h2>
+                <div class="offer__inner">
+                    <p class="offer__main-text">
+                        Устали от серости мегаполиса?
+                    </p>
+                    <p class="offer__main-text"> Нам есть, что вам предложить!</p>
+                </div>
                 <ul class="offer__list">
                     <li class="offer__item">
                         <h3 class="offer__title">Поднимает настроение</h3>
@@ -102,42 +103,47 @@
                             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
                         </p>
                     </li>
-                    <li class="offer__item">
-                        <h3 class="offer__title">Эффект на 24 часа!</h3>
-                        <p class="offer__text">
-                            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-                        </p>
-                    </li>
                 </ul>
-                <a class="offer__link" href="">Узнать больше об исследовании</a>
+                <div class="offer__effect">
+                    <h3 class="offer__title">Эффект на 24 часа!</h3>
+                    <p class="offer__text">
+                        Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+                    </p>
+                    <a class="offer__link" href="">Узнать больше об исследовании</a>
+                </div>
             </div>
         </section>
-        <section class="main-info">
+        <section class="main-desc">
             <div class="container">
-                <div class="main-info__slider">
-                    <span class="main-info__feedback">«Это приложение перевернуло мой мир и позволило по-новому
-            взглянуть на привычные серые вещи! А еще я познакомился со своей
-            будущей женой в комментариях к выложенной фотографии!»</span>
-                    <h2 class="main-info__user">Николай Петров</h2>
-                    <p class="main-info__text">25 лет, водитель трамвая</p>
+                <h2 class="visually-hidden">Отзывы Пинк</h2>
+                <div class="main-desc__slider">
+                    <p class="main-desc__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                    </p>
+                    <p class="main-desc__user">Николай Петров</p>
+                    <p class="main-desc__text">25 лет, водитель трамвая</p>
                 </div>
-                <table class="main-info__price">
-                    <tr class="main-info__list">
-                        <td class="main-info__item"></td>
-                        <td class="main-info__item">База</td>
-                        <td class="main-info__item">Стандарт</td>
-                        <td class="main-info__item">Анлим</td>
-                    </tr>
-                    <tr class="main-info__list">
-                        <td class="main-info__item">Розовый фильтр</td>
-                    </tr>
-                    <tr class="main-info__list">
-                        <td class="main-info__item">Смайлики</td>
-                    </tr>
-                    <tr class="main-info__list">
-                        <td class="main-info__item">Комментарии</td>
-                    </tr>
-                </table>
+                <div class="main-desc__slider">
+                    <p class="main-desc__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                    </p>
+                    <p class="main-desc__user">Николай Петров</p>
+                    <p class="main-desc__text">25 лет, водитель трамвая</p>
+                </div>
+                <div class="main-desc__slider">
+                    <p class="main-desc__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                    </p>
+                    <p class="main-desc__user">Николай Петров</p>
+                    <p class="main-desc__text">25 лет, водитель трамвая</p>
+                </div>
+                <div class="main-desc__price">
+                    <p class="main-desc__item">База</p>
+                    <p class="main-desc__item">Стандарт</p>
+                    <p class="main-desc__item">Анлим</p>
+                </div>
+                <div class="main-desc__list">
+                    <p class="main-desc__item">Розовый фильтр</p>
+                    <p class="main-desc__item">Смайлики</p>
+                    <p class="main-desc__item">Комментарии</p>
+                </div>
             </div>
         </section>
         <section class="feedback">
@@ -147,18 +153,18 @@
                 </h2>
                 <ul class="feedback__list">
                     <li class="feedback__item">
-                        <h3 class="feedback__subtitle">Звоните:</h3>
-                        <p class="feedback__text">+7 (812) 555-66-66</p>
+                        <p class="feedback__subtitle">Звоните:</p>
+                        <p class="feedback__text"><a class="feedback__phone" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
                     </li>
                     <li class="feedback__item">
-                        <h3 class="feedback__subtitle">Приезжайте в гости:</h3>
+                        <p class="feedback__subtitle">Приезжайте в гости:</p>
                         <p class="feedback__text">
                             ул. Большая <br /> Конюшенная, 19/8
                         </p>
                     </li>
                     <li class="feedback__item">
-                        <h3 class="feedback__subtitle">Пишите:</h3>
-                        <p class="feedback__text">mail@htmlacademy.ru</p>
+                        <p class="feedback__subtitle">Пишите:</p>
+                        <p class="feedback__text"><a class="feedback__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
                     </li>
                 </ul>
             </div>
