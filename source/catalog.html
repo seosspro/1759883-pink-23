@@ -65,9 +65,9 @@
     <div class="page-intro">
       <h1 class="page-intro__title">Фотографии пользователей</h1>
     </div>
-    <ul class="photo-list">
-      <div class="container">
-        <li class="users-photo">
+    <div class="container">
+      <ul class="users-photo">
+        <li class="users-photo__item">
           <img src="#" alt="">
           <span class="users-photo__title">Панорама дня</span>
           <span class="users-photo__user-name">Анна</span>
@@ -77,11 +77,11 @@
             вопросы!
           </p>
           <p class="users-photo__likes">Нравится:215</p>
-          <button type="submit" class="photo__button-like">
+          <button type="submit" class="users-photo__button-like">
             <span class="visually-hidden">"Мне нравится"</span>
           </button>
         </li>
-        <li class="users-photo">
+        <li class="users-photo__item">
           <img src="#" alt="">
           <span class="users-photo__user-name">Левон</span>
           <span class="users-photo__publication-date">(5 часов назад)</span>
@@ -93,7 +93,7 @@
             <span class="visually-hidden">"Мне нравится"</span>
           </button>
         </li>
-        <li class="users-photo">
+        <li class="users-photo__item">
           <img src="#" alt="">
           <span class="users-photo__user-name">Антон</span>
           <span class="users-photo__publication-date">(12 часов назад)</span>
@@ -103,7 +103,7 @@
             <span class="visually-hidden">"Мне нравится"</span>
           </button>
         </li>
-        <li class="users-photo">
+        <li class="users-photo__item">
           <img src="#" alt="">
           <span class="users-photo__user-name">Борис</span>
           <span class="users-photo__publication-date">(20 часов назад)</span>
@@ -115,7 +115,7 @@
             <span class="visually-hidden">"Мне нравится"</span>
           </button>
         </li>
-        <li class="users-photo">
+        <li class="users-photo__item">
           <img src="#" alt="">
           <span class="users-photo__user-name">Сергей</span>
           <span class="users-photo__publication-date">(25 часов назад)</span>
@@ -125,7 +125,7 @@
             <span class="visually-hidden">"Мне нравится"</span>
           </button>
         </li>
-        <li class="users-photo">
+        <li class="users-photo__item">
           <img src="#" alt="">
           <span class="users-photo__user-name">Максим</span>
           <span class="users-photo__publication-date">(40 часов назад)</span>
@@ -135,7 +135,7 @@
             <span class="visually-hidden">"Мне нравится"</span>
           </button>
         </li>
-        <li class="users-photo">
+        <li class="users-photo__item">
           <img src="#" alt="">
           <span class="users-photo__user-name">Надежда</span>
           <span class="users-photo__publication-date">(45 часов назад)</span>
@@ -145,8 +145,8 @@
             <span class="visually-hidden">"Мне нравится"</span>
           </button>
         </li>
-      </div>
-    </ul>
+      </ul>
+    </div>
     <section class="upload">
       <div class="container">
         <p class="upload__slogan">
@@ -154,8 +154,9 @@
         </p>
         <form class="upload__form" action="#">
           <img class="upload__img" src="#" alt="">
-          <button class="upload__button cancel" type="submit" value="Отмена">
-            <button class="upload__button" type="reset" value="Запостить">
+          <button class="upload__button" type="submit">Запостить</button>
+          <button class="upload__button cancel" type="reset">Отмена</button>
+
         </form>
     </section>
     <footer class="main-footer">
@@ -200,13 +201,19 @@
             <span class="visually-hidden">Мы в Твиттере</span>
           </a>
         </li>
-        <li class="social__item"><a class="social__link" href=""><span class="visually-hidden">Мы в
-              фейсбуке</span></a></li>
-        <li class="social__item"><a class="social__link" href=""><span class="visually-hidden">Смотри нас на
-              Ютуб</span></a></li>
+        <li class="social__item"><a class="social__link" href="">
+            <span class="visually-hidden">Мы в
+              фейсбуке</span>
+          </a>
+        </li>
+        <li class="social__item"><a class="social__link" href="">
+            <span class="visually-hidden">Смотри нас на
+              Ютуб</span>
+          </a>
+        </li>
       </ul>
       <p class="main-footer__copyright">Разработано
-        <a class="main-footer__copyright-logo" href="https://up.htmlacademy.ru/adaptive/23/project/pink#pink-3-8"></a>
+        <a class="main-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </p>
       </div>
     </footer>
