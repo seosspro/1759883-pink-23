@@ -83,79 +83,72 @@
       </p>
       <form class="competition-form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="competition-form__fieldset">
-          <ul class="competition__list">
+          <ul class="competition-form__list">
             <li class="competition-form__item">
-              <label for="surname" class="form-label">
+              <label class="competition-form__label" for="surname">
                 Фамилия:
               </label>
-              <input class="competition-form__text" type="text" id="surname" placeholder="Укажите фамилию *">
+              <input class="competition-form__input" type="text" id="surname" placeholder="Укажите фамилию *">
             </li>
             <li class="competition-form__item">
-              <label for="name" class="form-label">
+              <label for="name" class="competition-form__label">
                 Имя:
               </label>
-              <input class="competition-form__text" type="text" id="name" placeholder="Введите ваше имя *">
+              <input class="competition-form__input" type="text" id="name" placeholder="Введите ваше имя *">
             </li>
             <li class="competition-form__item">
-              <label for="lastname" class="form-label">
+              <label for="lastname" class="competition-form__label">
                 Отчество:
               </label>
-              <input class="competition-form__text" type="text" id="lastname" placeholder="Ну и отчество тоже">
+              <input class="competition-form__label" type="text" id="lastname" placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </fieldset>
         <fieldset class="competition-form__fieldset">
           <legend class="competition-form__legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="сompetition-form__checkboxes">
-            <li class="checkboxes__item">
-              <input id="achievement-01" class="competition-form__input" type="checkbox" name="achievement"
-                placeholder="selfie with shark" checked>
+            <li class="сompetition-form__item">
+              <input id="achievement-01" class="competition-form__input" type="checkbox" name="achievement" checked>
               <label for="achievement-01" class="competition-form-label">Сделал селфи с акулой</label>
             </li>
-            <li class="checkboxes__item">
-              <input id="achievement-02" class="competition-form__input" type="checkbox" name="achievement"
-                placeholder="beach" checked>
+            <li class="сompetition-form__item">
+              <input id="achievement-02" class="competition-form__input" type="checkbox" name="achievement" checked>
               <label for="achievement-02" class="competition-form-label">Обгорел на пляже</label>
             </li>
-            <li class="checkboxes__item">
-              <input id="achievement-03" class="competition-form__input" type="checkbox" name="achievement"
-                placeholder="Chuck Norris">
+            <li class="сompetition-form__item">
+              <input id="achievement-03" class="competition-form__input" type="checkbox" name="achievement">
               <label for="achievement-03" class="competition-form-label">Видел Чака Норриса</label>
             </li>
-            <li class="checkboxes__item">
-              <input id="achievement-04" class="competition-form__input" type="checkbox" name="achievement"
-                placeholder="Souvenir">
+            <li class="сompetition-form__item">
+              <input id="achievement-04" class="competition-form__input" type="checkbox" name="achievement">
               <label for="achievement-04" class="competition-form-label">Накупил сувениров</label>
             </li>
-            <li class="checkboxes__item">
-              <input id="achievement-05" class="competition-form__input" type="checkbox" name="achievement"
-                placeholder="tower" checked>
+            <li class="сompetition-form__item">
+              <input id="achievement-05" class="competition-form__input" type="checkbox" name="achievement" checked>
               <label for="achievement-05" class="competition-form-label">Удержал башню</label>
             </li>
-            <li class="checkboxes__item">
-              <input id="achievement-06" class="competition-form__input" type="checkbox" name="achievement"
-                placeholder="hotel">
+            <li class="сompetition-form__item">
+              <input id="achievement-06" class="competition-form__input" type="checkbox" name="achievement">
               <label for="achievement-06" class="competition-form-label">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="competition-form__fieldset">
-          <legend class="competition-form__legend">Номер телефона</legend>
-          <label for="phone" class="form-label"></label>
-          <input id="phone" class="competition-form__text" type="text" placeholder="Номер, пожалуйста">
-          <legend class="competition-form__legend">Адрес почты</legend>
-
-          <label for="mail" class="form-label"></label>
-          <input id="mail" class="competition-form__text" type="text" placeholder="Введите почту *">
+          <label class="competition-form__label">Номер телефона</label>
+          <label for="phone" class="competition-form__label"></label>
+          <input id="phone" class="competition-form__input" type="text" placeholder="Номер, пожалуйста">
+          <label class="competition-form__legend">Адрес почты</label>
+          <label for="mail" class="competition-form__label"></label>
+          <input id="mail" class="competition-form__input" type="text" placeholder="Введите почту *">
         </fieldset>
         <fieldset class="competition-form__fieldset">
           <legend class="competition-form__legend">С каким приложением путешествовали?</legend>
           <input id="ios" class="competition-form__checkbox" type="radio" name="app" value="iOS" checked>
-          <label for="ios" class="form-label">Pink для iOS</label>
+          <label for="ios" class="competition-form__label">Pink для iOS</label>
           <input id="android" class="competition-form__checkbox" type="radio" name="app" value="Android">
-          <label for="android" class="form-label">Pink на Android</label>
+          <label for="android" class="competition-form__label">Pink на Android</label>
           <input id="windows" class="competition-form__checkbox" type="radio" name="app" value="Windows">
-          <label for="windows" class="form-label">Windows Phone</label>
+          <label for="windows" class="competition-form__label">Windows Phone</label>
         </fieldset>
         <fieldset class="competition-form__fieldset">
           <legend class="competition-form__legend">Опишите свои эмоции</legend>
@@ -210,10 +203,16 @@
           <span class="visually-hidden">Мы в Твиттере</span>
         </a>
       </li>
-      <li class="social__item"><a class="social__link" href=""><span class="visually-hidden">Мы в
-            фейсбуке</span></a></li>
-      <li class="social__item"><a class="social__link" href=""><span class="visually-hidden">Смотри нас на
-            Ютуб</span></a></li>
+      <li class="social__item">
+        <a class="social__link" href="">
+          <span class="visually-hidden">Мы в фейсбуке</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="">
+          <span class="visually-hidden">Смотри нас на Ютуб</span>
+        </a>
+      </li>
     </ul>
     <p class="main-footer__copyright">Разработано
       <a class="main-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
