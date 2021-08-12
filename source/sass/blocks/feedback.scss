@@ -1,0 +1,38 @@
+.feedback {
+}
+.feedback__link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $basic-red;
+  text-decoration: none;
+}
+.feedback__item {
+  list-style: none;
+}
+.feedback__text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $basic-red;
+}
+.feedback__title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: $dark-blue;
+}
+.feedback__subtitle {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: $dark-blue;
+}

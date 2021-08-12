@@ -1,0 +1,26 @@
+.reviews {
+  .reviews__comment {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: $dark-blue;
+  }
+  .reviews__user {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: $black;
+  }
+}
+.reviews__info {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+}
