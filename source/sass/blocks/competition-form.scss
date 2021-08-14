@@ -1,0 +1,103 @@
+.competition-form {
+}
+
+.competition-form__label {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $basic-red;
+}
+
+.competition-form__label-form {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-blue;
+}
+.competition-form__item {
+  list-style: none;
+}
+
+.competition-form__legend {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-red;
+}
+
+.competition-form__tagging {
+  color: $basic-red;
+}
+
+.competition-form__tagging-span {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $dark-blue;
+}
+
+.competition-form__submit-button {
+  background: $green;
+  border: 2px solid $green;
+  border-radius: 1px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: $white;
+  text-transform: uppercase;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-top: 52px;
+}
+
+::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-blue;
+}
+
+.competition-form__input {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 83px;
+  border: 2px solid $special-white;
+  border-radius: 1px;
+  margin-bottom: 56px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.competition-form__textarea {
+  border: 2px solid $special-white;
+  border-radius: 1px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-blue;
+  padding-top: 22px;
+  width: 276px;
+  height: 197px;
+}

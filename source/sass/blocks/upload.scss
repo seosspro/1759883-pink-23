@@ -1,0 +1,23 @@
+.upload {
+  background-color: $grey;
+}
+.upload__slogan {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+}
+.upload__button {
+  border: 3px solid #d22856;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $basic-red;
+  padding: 21px 90px;
+}

@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+@import "global/variables.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-intro.scss";
+@import "blocks/main-info.scss";
+@import "blocks/site-list.scss";
+@import "blocks/store.scss";
+@import "blocks/page-main.scss";
+@import "blocks/offer.scss";
+@import "blocks/advantages.scss";
+@import "blocks/research.scss";
+@import "blocks/visually-hidden";
+@import "blocks/reviews.scss";
+@import "blocks/prices.scss";
+@import "blocks/feedback.scss";
+@import "blocks/social.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/users-photo.scss";
+@import "blocks/upload.scss";
+@import "blocks/competition.scss";
+@import "blocks/competition-form.scss";
