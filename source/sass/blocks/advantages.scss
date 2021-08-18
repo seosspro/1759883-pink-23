@@ -1,6 +1,8 @@
 .advantages {
-  background-image: url(../img/grey-background.png);
-  background-repeat: no-repeat;
+  @media (min-width:$mobile-width){
+    background-image: url(../img/grey-background.png);
+    background-repeat: no-repeat;
+  }
 }
 .advantages__text {
   font-family: "Open Sans", sans-serif;
@@ -21,3 +23,20 @@
   line-height: 24px;
   color: $black;
 }
+.advantages__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    column-gap: 81px;
+    .advantages {
+      background-image: url(../img/grey-background.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  display: flex;
+  column-gap: 81px;
+  .advantages {
+    background-image: url(../img/grey-background.png);
+    background-repeat: no-repeat;
+  }

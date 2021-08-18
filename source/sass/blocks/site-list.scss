@@ -1,4 +1,9 @@
 .site-list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-left: 173px;
+    align-items: stretch;
+  }
 }
 .site-list__link {
   list-style: none;
