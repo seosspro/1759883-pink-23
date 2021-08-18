@@ -38,4 +38,6 @@
   color: $dark-blue;
 }
 .feedback__list {
+  display: flex;
+  column-gap: 40px;
 }
