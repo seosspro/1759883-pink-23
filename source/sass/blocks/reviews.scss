@@ -1,6 +1,9 @@
 .reviews {
 }
 .reviews__info {
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -9,6 +12,9 @@
   color: $dark-blue;
 }
 .reviews__user {
+  @media (min-width: $mobile-width) {
+    order: 1;
+  }
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;

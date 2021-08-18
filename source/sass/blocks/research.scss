@@ -1,4 +1,7 @@
 .research {
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
 }
 .research__link {
   font-family: "Open Sans", sans-serif;

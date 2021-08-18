@@ -8,3 +8,20 @@
   line-height: 18px;
   color: $dark-blue;
 }
+@media (min-width: $desktop-width) {
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: $mobile-width) {
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
