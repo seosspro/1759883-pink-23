@@ -8,6 +8,8 @@
   line-height: 33px;
   color: $basic-red;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 .feedback__item {
   list-style: none;
@@ -19,6 +21,7 @@
   font-size: 24px;
   line-height: 33px;
   color: $basic-red;
+  text-align: center;
 }
 .feedback__title {
   font-family: "Open Sans", sans-serif;
@@ -36,8 +39,10 @@
   font-size: 18px;
   line-height: 25px;
   color: $dark-blue;
+  text-align: center;
 }
 .feedback__list {
   display: flex;
+  flex-direction: column;
   column-gap: 40px;
 }

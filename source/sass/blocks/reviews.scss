@@ -12,9 +12,7 @@
   color: $dark-blue;
 }
 .reviews__user {
-  @media (min-width: $mobile-width) {
-    order: 1;
-  }
+  text-align: center;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;

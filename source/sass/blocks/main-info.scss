@@ -9,6 +9,8 @@
   line-height: 18px;
   text-decoration: none;
   color: $white;
+  display: flex;
+  justify-content: center;
 }
 .main-info__text {
   font-family: "Open Sans", sans-serif;
@@ -17,6 +19,7 @@
   font-size: 14px;
   line-height: 24px;
   color: $white;
+  text-align: center;
 }
 .main-info__slogan {
   font-family: "Open Sans", sans-serif;

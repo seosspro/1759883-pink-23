@@ -24,6 +24,9 @@
   color: $black;
 }
 .advantages__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   @media (min-width: $desktop-width) {
     display: flex;
     column-gap: 81px;
