@@ -60,16 +60,14 @@
             Academy</a></li>
       </ul>
     </nav>
-    <p class="main-info__slogan">Взгляните на жизнь <br> иначе!</p>
-    <img src="img/phone.png" alt="Смартфон с изображением на экране">
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">"Пинк"</h1>
-    <section class="main-info">
-      <div class="container">
+    <div class="main-info container">
+      <div class="img-wrapper"><img src="img/phone.png" alt="Смартфон с изображением на экране"></div>
+      <div class="header-inner">
+        <p class="main-info__slogan">Взгляните на жизнь <br> иначе!</p>
         <a class="main-info__link" href="">Скачать приложение</a>
         <ul class="store">
-          <li class="store__item"><a class="store__link" href=""><span class="visually-hidden">App Store</span></a></li>
+          <li class="store__item"><a class="store__link" href=""><span class="visually-hidden">App Store</span></a>
+          </li>
           <li class="store__item"><a class="store__link" href=""><span class="visually-hidden">Google Play</span></a>
           </li>
           <li class="store__item"><a class="store__link" href=""><span class="visually-hidden">Microsoft
@@ -79,8 +77,11 @@
           Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8
         </p>
       </div>
-    </section>
+    </div>
+  </header>
+  <main class="page-main">
     <section class="offer">
+      <h1 class="visually-hidden">"Пинк"</h1>
       <div class="offer__inner">
         <p class="offer__text">
           Устали от серости <br> мегаполиса?
@@ -106,16 +107,21 @@
             <p class="advantages__text">
               Ставьте лайки, <br> комментируйте, делитесь <br> фотографиями с друзьями <br> и заводите новых
             </p>
-          </li>
+          <li>
         </ul>
-        <div class="research container">
-          <h3 class="research__title">Эффект на 24 часа!</h3>
-          <p class="research__text">
-            Британские ученые провели исследования и доказали, <br> что положительный эффект от использования приложения
-            <br>
-            длится целые сутки!
-          </p>
-          <a class="research__link" href="">Узнать больше об исследовании</a>
+        <img class="advantages__img" src="img/hellophone.png" alt="Изображение смартфона">
+        <div class="research-wrapper">
+          <div class="clock"><img class="clock__img" src="img/clock.svg" alt="Изображение часов с числом 24"></div>
+          <div class="research container">
+            <h3 class="research__title">Эффект на 24 часа!</h3>
+            <p class="research__text">
+              Британские ученые провели исследования и доказали, <br> что положительный эффект от использования
+              приложения
+              <br>
+              длится целые сутки!
+            </p>
+            <a class="research__link" href="">Узнать больше об исследовании</a>
+          </div>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 .main-footer {
 }
 .main-footer__copyright {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Arial", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -16,8 +16,8 @@
     margin: 0 auto;
   }
 }
-@media (min-width: $mobile-width) {
-  .main-footer__container {
+.main-footer__container {
+  @media (min-width: $mobile-width) {
     display: flex;
     justify-content: space-between;
     min-width: 320px;

@@ -1,8 +1,14 @@
 .main-info {
-  background-color: $bg-dark-black;
+  @media (min-width: $mobile-width) {
+    display: flex;
+    font-size: 0;
+  }
+  img {
+    display: none;
+  }
 }
 .main-info__link {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Arial", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -13,7 +19,7 @@
   justify-content: center;
 }
 .main-info__text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Arial", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -22,7 +28,7 @@
   text-align: center;
 }
 .main-info__slogan {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Arial", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
