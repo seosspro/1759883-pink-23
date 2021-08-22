@@ -1,6 +1,7 @@
 .site-list {
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-direction: row;
     margin-left: 173px;
     align-items: stretch;
   }

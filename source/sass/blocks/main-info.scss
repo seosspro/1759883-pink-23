@@ -3,9 +3,6 @@
     display: flex;
     font-size: 0;
   }
-  img {
-    display: none;
-  }
 }
 .main-info__link {
   font-family: "Arial", "Open Sans", sans-serif;
@@ -37,4 +34,10 @@
   line-height: 29px;
   color: $white;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    margin-top: 200px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 350px;
+  }
 }

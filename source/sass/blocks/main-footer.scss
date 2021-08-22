@@ -17,6 +17,7 @@
     justify-content: space-between;
     max-width: 940px;
     margin: 0 auto;
+    padding: 0 130px;
   }
   @media (min-width: $tablet-width) {
     display: flex;
@@ -24,5 +25,6 @@
     justify-content: space-between;
     max-width: 940px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 }
