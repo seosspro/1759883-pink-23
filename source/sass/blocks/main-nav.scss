@@ -1,5 +1,8 @@
 .main-nav {
+  min-width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: $black-bg;
+  @media (min-width: $tablet-width) {
+  }
 }

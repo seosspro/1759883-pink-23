@@ -49,5 +49,12 @@
   column-gap: 40px;
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
   }
 }

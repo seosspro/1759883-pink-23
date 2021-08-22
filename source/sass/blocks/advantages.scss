@@ -1,11 +1,8 @@
 .advantages {
-  @media (min-width: $mobile-width) {
-    background-image: url(../img/grey-background.png);
-    background-repeat: no-repeat;
-  }
-  @media (min-width: $tablet-width) {
-    background-color: $grey;
-  }
+  background-image: url(../img/grey-background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
 }
 .advantages__text {
   font-family: "Open Sans", sans-serif;
@@ -30,20 +27,4 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  @media (min-width: $desktop-width) {
-    display: flex;
-    column-gap: 81px;
-    .advantages {
-      background-image: url(../img/grey-background.png);
-      background-repeat: no-repeat;
-    }
-  }
-}
-@media (min-width: $desktop-width) {
-  display: flex;
-  column-gap: 81px;
-  .advantages {
-    background-image: url(../img/grey-background.png);
-    background-repeat: no-repeat;
-  }
 }

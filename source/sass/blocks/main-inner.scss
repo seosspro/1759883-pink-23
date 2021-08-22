@@ -1,0 +1,11 @@
+.main-inner {
+  @media (min-width: $mobile-width) {
+    background-color: $dark-blue;
+  }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

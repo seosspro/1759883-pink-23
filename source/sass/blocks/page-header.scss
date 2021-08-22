@@ -1,8 +1,10 @@
 .page-header {
-  background-color: $black-bg;
+  height: 462px;
+  background-image: url(../img/phone.png), url(../img/back-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
   @media (min-width: $tablet-width) {
-    display: flex;
-    background-image: url(../img/phone.png);
+    background-image: url(../img/phone.png), url(../img/back-mobile.png);
     background-repeat: no-repeat;
   }
 }
