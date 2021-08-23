@@ -1,11 +1,14 @@
 .advantages {
-  background-image: url(../img/grey-background.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 100%;
+  @media (min-width: $desktop-width) {
+    background-image: url(../img/grey-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+  }
 }
+
 .advantages__text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -16,7 +19,7 @@
   list-style: none;
 }
 .advantages__title {
-  font-family: "Arial", "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -27,6 +30,10 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-image: url(../img/grey-background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
   @media (min-width: $tablet-width) {
   }
   @media (min-width: $desktop-width) {

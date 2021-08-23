@@ -5,7 +5,7 @@
   }
 }
 .main-info__link {
-  font-family: "Arial", "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -17,7 +17,7 @@
 }
 
 .main-info__text {
-  font-family: "Arial", "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -27,17 +27,32 @@
 }
 
 .main-info__slogan {
-  font-family: "Arial", "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   color: $white;
-  text-align: center;
   @media (min-width: $tablet-width) {
-    margin-top: 200px;
+    display: none;
   }
   @media (min-width: $desktop-width) {
-    margin-top: 350px;
+    display: none;
+  }
+}
+
+.main-info__slogan-visually {
+  display: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: $white;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

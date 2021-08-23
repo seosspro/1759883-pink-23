@@ -1,5 +1,5 @@
 .main-footer__copyright {
-  font-family: "Arial", "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -11,20 +11,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 130px;
-  }
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     max-width: 940px;
     margin: 0 auto;
     padding: 0 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 130px;
   }
 }

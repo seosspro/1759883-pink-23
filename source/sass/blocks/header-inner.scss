@@ -1,14 +1,10 @@
 .header-inner {
-  display: none;
+  background-color: $dark-blue;
+  background-size: cover;
   @media (min-width: $tablet-width) {
-    display: block;
-    margin-top: 300px;
-    margin-left: -175px;
+    background-color: unset;
   }
   @media (min-width: $desktop-width) {
-    display: flex;
     flex-direction: column;
-    margin-top: 450px;
-    margin-left: -150px;
   }
 }

@@ -1,12 +1,17 @@
-.clock {
-}
-
 .clock__img {
+  display: none;
+  @media (min-width: $tablet-width) {
+  }
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+.clock__img-tablet {
   display: none;
   @media (min-width: $tablet-width) {
     display: block;
   }
   @media (min-width: $desktop-width) {
-    display: block;
+    display: none;
   }
 }
