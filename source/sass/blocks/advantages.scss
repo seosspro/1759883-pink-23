@@ -39,6 +39,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    column-gap: 78px;
   }
 }
 .advantages__img {

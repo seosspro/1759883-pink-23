@@ -1,15 +1,16 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   height: 462px;
-  background-image: url(../img/phone.png), url(../img/back-mobile.png);
+  background-image: url(../img/back-mobile.png);
   background-repeat: no-repeat;
   background-position: bottom;
   @media (min-width: $tablet-width) {
-    background-image: url(../img/phone-tablet.png), url(../img/back-tablet.png);
+    background-image: url(../img/back-tablet.png);
     height: 729px;
   }
   @media (min-width: $desktop-width) {
-    background-image: url(../img/phone-desktop.png),
-      url(../img/back-desktop.png);
+    background-image: url(../img/back-desktop.png);
     background-repeat: no-repeat;
     height: 853px;
   }
