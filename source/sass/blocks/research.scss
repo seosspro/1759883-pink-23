@@ -1,23 +1,34 @@
 .research {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 .research__link {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: $basic-red;
 }
+
 .research__text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue;
 }
+
 .research__title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;

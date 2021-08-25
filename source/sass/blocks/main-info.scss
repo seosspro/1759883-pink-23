@@ -1,31 +1,50 @@
 .main-info {
-  background-color: $bg-dark-black;
 }
 .main-info__link {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   text-decoration: none;
   color: $white;
+  display: flex;
+  justify-content: center;
 }
+
 .main-info__text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   color: $white;
+  text-align: center;
 }
+
 .main-info__slogan {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   color: $white;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.main-info__slogan-visually {
+  display: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: $white;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

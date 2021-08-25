@@ -1,9 +1,15 @@
 .site-list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    margin-left: 173px;
+    align-items: stretch;
+  }
 }
 .site-list__link {
   list-style: none;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
