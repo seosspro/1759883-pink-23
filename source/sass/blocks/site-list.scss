@@ -1,4 +1,5 @@
 .site-list {
+  padding: 0;
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;

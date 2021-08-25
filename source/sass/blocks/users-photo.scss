@@ -1,4 +1,14 @@
 .users-photo {
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media (min-width: $desktop-width) {
+  }
 }
 .users-photo__title {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -13,6 +23,8 @@
   list-style: none;
   display: inline-block;
   background-color: $grey;
+  width: 280px;
+  margin-bottom: 20px;
 }
 .users-photo__user-name {
   font-family: "Open Sans", "Arial", sans-serif;
