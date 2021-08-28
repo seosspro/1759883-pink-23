@@ -18,10 +18,22 @@
   line-height: 18px;
   color: $basic-red;
   padding: 21px 90px;
+  margin-bottom: 12px;
+  margin-top: 38px;
 }
+
 .upload_wrapper-inner {
   background-color: $grey;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.upload__form {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
