@@ -8,6 +8,18 @@
   color: $white;
   display: flex;
   justify-content: center;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 300px;
+  padding: 20px 32px;
+  &:hover {
+    color: #d22856;
+    background-color: $white;
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .main-info__text {
@@ -29,6 +41,14 @@
   color: $white;
   text-align: center;
   margin-bottom: 200px;
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .main-info__slogan-visually {

@@ -2,16 +2,25 @@
   display: flex;
   flex-direction: column;
   height: 462px;
-  background-image: url(../img/back-mobile.png);
+  background-image: url(../img/back-mobile.jpg);
   background-repeat: no-repeat;
-  background-position: bottom;
+  width: 100%;
+  background-size: cover;
   @media (min-width: $tablet-width) {
-    background-image: url(../img/back-tablet.png);
+    background-image: url(../img/back-tablet.jpg);
     height: 729px;
   }
   @media (min-width: $desktop-width) {
-    background-image: url(../img/back-desktop.png);
+    background-image: url(../img/back-desktop.jpg);
     background-repeat: no-repeat;
     height: 853px;
+  }
+}
+
+.page-header__logo {
+  width: 147px;
+  height: 40px;
+  :hover {
+    fill: rgba(210, 40, 86, 1);
   }
 }

@@ -1,10 +1,11 @@
 .site-list {
   padding: 0;
+  display: none;
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     margin-left: 173px;
-    align-items: stretch;
+    column-gap: 79px;
   }
 }
 .site-list__link {
@@ -19,4 +20,24 @@
 }
 .site-list__item {
   list-style: none;
+  :hover {
+    color: #d22856;
+  }
+  :active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &--active {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin-top: 19px;
+      top: 19px;
+      height: 2px;
+      background: $white;
+    }
+  }
 }

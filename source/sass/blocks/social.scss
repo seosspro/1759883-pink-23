@@ -1,5 +1,22 @@
 .social {
+  display: flex;
+  align-items: center;
+  column-gap: 49px;
 }
+
 .social__item {
-  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 47px;
+  height: 47px;
+  font-size: 0;
+  line-height: 0;
+  background-color: #fff;
+  border: 2px solid #e9ebec;
+  border-radius: 50%;
+}
+
+.social__icon {
+  position: absolute;
 }

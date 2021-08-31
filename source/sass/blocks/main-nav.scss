@@ -6,3 +6,19 @@
   @media (min-width: $desktop-width) {
   }
 }
+
+.main-nav__toggle {
+  display: block;
+  position: absolute;
+  border: none;
+  outline: none;
+  width: 200px;
+  min-height: 66px;
+  background-color: unset;
+  font-size: 0;
+  line-height: 0;
+  z-index: 100;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
