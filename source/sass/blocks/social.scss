@@ -2,12 +2,28 @@
   display: flex;
   align-items: center;
   column-gap: 49px;
+  padding: 0;
 }
 
 .social__item {
+  list-style: none;
+}
+
+.social__icon {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 17px;
+  top: 15px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
   display: inline-block;
   vertical-align: middle;
   position: relative;
+  margin: 0 6px;
   width: 47px;
   height: 47px;
   font-size: 0;
@@ -15,8 +31,10 @@
   background-color: #fff;
   border: 2px solid #e9ebec;
   border-radius: 50%;
-}
-
-.social__icon {
-  position: absolute;
+  &:hover {
+    border: 2px solid black;
+  }
+  &:active {
+    opacity: 0.1;
+  }
 }

@@ -8,4 +8,11 @@
   line-height: 29px;
   color: $dark-blue;
   text-align: center;
+  @media (min-width: $tablet-width) {
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 77px;
+  }
 }

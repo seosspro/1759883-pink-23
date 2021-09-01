@@ -1,10 +1,16 @@
 .main-footer__copyright {
+  position: relative;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $dark-blue;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/html-academy.svg);
+  }
 }
 
 .main-footer__container {

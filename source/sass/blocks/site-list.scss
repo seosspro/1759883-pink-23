@@ -1,6 +1,7 @@
 .site-list {
   padding: 0;
   display: none;
+  list-style: none;
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;

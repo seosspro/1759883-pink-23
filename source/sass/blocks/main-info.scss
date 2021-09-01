@@ -11,7 +11,7 @@
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 30px;
-  width: 300px;
+  margin: 0;
   padding: 20px 32px;
   &:hover {
     color: #d22856;
@@ -19,6 +19,9 @@
   }
   &:active {
     color: rgba(210, 40, 86, 0.3);
+  }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
   }
 }
 
@@ -30,6 +33,11 @@
   line-height: 24px;
   color: $white;
   text-align: center;
+  margin: 0;
+  @media (min-width: $tablet-width) {
+  }
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .main-info__slogan {
@@ -39,8 +47,6 @@
   font-size: 24px;
   line-height: 29px;
   color: $white;
-  text-align: center;
-  margin-bottom: 200px;
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 48px;
