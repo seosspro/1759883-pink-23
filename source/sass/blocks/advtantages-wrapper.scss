@@ -1,0 +1,8 @@
+.advantages-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/grey-background.png);
+    background-repeat: no-repeat;
+  }
+}

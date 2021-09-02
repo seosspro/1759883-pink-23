@@ -17,7 +17,8 @@
   background-color: unset;
   font-size: 0;
   line-height: 0;
-  z-index: 100;
+  top: -5px;
+  right: 0;
   @media (min-width: $desktop-width) {
     display: none;
   }

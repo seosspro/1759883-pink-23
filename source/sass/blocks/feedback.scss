@@ -8,10 +8,20 @@
   text-decoration: none;
   display: flex;
   justify-content: center;
+  &:hover {
+    text-decoration: underline;
+    color: rgba(40, 54, 69, 1);
+  }
+  &:active {
+    text-decoration: none;
+    color: rgba(40, 54, 69, 0.3);
+  }
 }
+
 .feedback__item {
   list-style: none;
 }
+
 .feedback__text {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -21,6 +31,7 @@
   color: $basic-red;
   text-align: center;
 }
+
 .feedback__title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -30,6 +41,7 @@
   color: $dark-blue;
   text-align: center;
 }
+
 .feedback__subtitle {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -39,6 +51,7 @@
   color: $dark-blue;
   text-align: center;
 }
+
 .feedback__list {
   display: flex;
   flex-direction: column;
