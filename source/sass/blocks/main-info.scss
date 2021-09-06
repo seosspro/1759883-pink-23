@@ -13,6 +13,8 @@
   border-radius: 30px;
   margin: 0;
   padding: 20px 32px;
+  margin-top: 29px;
+  margin-bottom: 38px;
   &:hover {
     color: #d22856;
     background-color: $white;
@@ -34,6 +36,7 @@
   color: $white;
   text-align: center;
   margin: 0;
+  margin-bottom: 38px;
   @media (min-width: $tablet-width) {
   }
   @media (min-width: $desktop-width) {

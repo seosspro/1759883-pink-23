@@ -1,15 +1,15 @@
 .header-inner {
-  background-color: $dark-blue;
+  background-color: #1d2631;
   background-repeat: no-repeat;
+  margin-top: 290px;
   @media (min-width: $tablet-width) {
     background-image: url(../img/phone-tablet.png);
     background-color: unset;
     background-position: bottom;
+    margin-top: 205px;
   }
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: flex-start;
     background-image: url(../img/phone-desktop.png);
-    flex-direction: column;
+    margin-top: 257px;
   }
 }

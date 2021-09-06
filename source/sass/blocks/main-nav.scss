@@ -1,9 +1,10 @@
 .main-nav {
   min-width: 100%;
-  background-color: $black-bg;
+  background-color: $dark-blue;
   @media (min-width: $tablet-width) {
   }
   @media (min-width: $desktop-width) {
+    background-color: $black-bg;
   }
 }
 
@@ -17,9 +18,23 @@
   background-color: unset;
   font-size: 0;
   line-height: 0;
-  top: -5px;
-  right: 0;
+  top: -18px;
+  right: -50px;
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.main-nav__logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav__toggle-svg {
+  &:hover path {
+    fill: $basic-red;
+  }
+  &:active path {
+    opacity: 0.3;
   }
 }
