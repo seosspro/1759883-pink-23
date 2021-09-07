@@ -18,8 +18,11 @@
   background-color: unset;
   font-size: 0;
   line-height: 0;
-  top: -18px;
+  top: 2px;
   right: -50px;
+  @media (min-width: $tablet-width) {
+    top: 20px;
+  }
   @media (min-width: $desktop-width) {
     display: none;
   }

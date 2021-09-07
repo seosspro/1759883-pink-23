@@ -1,15 +1,11 @@
 .header-inner {
   background-color: #1d2631;
   background-repeat: no-repeat;
-  margin-top: 290px;
   @media (min-width: $tablet-width) {
     background-image: url(../img/phone-tablet.png);
     background-color: unset;
-    background-position: bottom;
-    margin-top: 205px;
   }
   @media (min-width: $desktop-width) {
     background-image: url(../img/phone-desktop.png);
-    margin-top: 257px;
   }
 }
