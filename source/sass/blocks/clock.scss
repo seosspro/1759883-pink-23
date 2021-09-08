@@ -9,6 +9,7 @@
 .clock__img-tablet {
   display: none;
   @media (min-width: $tablet-width) {
+    margin-top: 54px;
     display: block;
   }
   @media (min-width: $desktop-width) {

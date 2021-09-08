@@ -1,9 +1,9 @@
 .map {
   background-image: url(../img/map-mobile.jpg);
   height: 200px;
-  background-color: #f2f2f2;
   background-repeat: no-repeat;
   font-size: 0;
+  background-position: center;
   line-height: 0;
   @media (min-width: $tablet-width) {
     height: 374px;

@@ -4,6 +4,7 @@
   text-align: center;
   display: none;
   @media (min-width: $tablet-width) {
+    margin-top: 102px;
     display: block;
   }
 }

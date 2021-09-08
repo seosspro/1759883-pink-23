@@ -31,8 +31,12 @@
   list-style: none;
   display: inline-block;
   background-color: $grey;
+  overflow: hidden;
   width: 280px;
   margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .users-photo__user-name {

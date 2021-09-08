@@ -97,6 +97,8 @@
 }
 
 .advantages__img {
+  display: flex;
+  align-items: center;
   @media (min-width: $desktop-width) {
     display: none;
   }

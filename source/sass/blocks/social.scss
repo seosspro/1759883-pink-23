@@ -1,8 +1,11 @@
 .social {
   display: flex;
   align-items: center;
-  column-gap: 49px;
   padding: 0;
+  margin-bottom: 53px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .social__item {
