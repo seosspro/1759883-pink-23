@@ -8,6 +8,8 @@
 }
 
 .competition-form__fieldset-apps {
+  background-color: $grey;
+  border: none;
   padding: 0;
   @media (min-width: $tablet-width) {
     order: -2;
@@ -15,12 +17,14 @@
 }
 
 .competition-form__fieldset-name {
+  border: none;
   @media (min-width: $tablet-width) {
     order: -2;
   }
 }
 
 .competition-form__fieldset-address {
+  border: none;
   @media (min-width: $tablet-width) {
     order: -1;
   }
@@ -30,11 +34,15 @@
 }
 
 .competition-form__fieldset-emotion {
+  border: none;
   @media (min-width: $tablet-width) {
   }
 }
 
 .competition-form__fieldset-achievement {
+  background-color: $grey;
+  border: none;
+  margin-top: 10px;
   @media (min-width: $desktop-width) {
     width: 100%;
   }
@@ -57,7 +65,9 @@
   font-size: 18px;
   line-height: 30px;
   color: $dark-blue;
+  padding-top: 69px;
 }
+
 .competition-form__item {
   list-style: none;
 }
@@ -69,6 +79,10 @@
   font-size: 14px;
   line-height: 18px;
   color: $basic-red;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .competition-form__tagging {
@@ -139,6 +153,15 @@
   padding-top: 22px;
   width: 276px;
   height: 197px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 201px;
+  margin-top: 6px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 15px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
 }
 
 .competition-form__list {
@@ -149,4 +172,177 @@
 
 .competition-form__fieldset {
   padding: 0;
+}
+
+.competition-form__hidden {
+  display: none;
+}
+
+.competition-form__label-form--checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  &:hover {
+    cursor: pointer;
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    margin-right: 31px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+  }
+}
+
+.competition-form__label-form--radio {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: $dark-blue;
+  position: relative;
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    margin-right: 31px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    &:checked {
+      border-color: $dark-blue;
+      transition: 0.2s;
+    }
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 12px;
+    left: 12px;
+    background-color: #d22856;
+    border-radius: 50%;
+  }
+}
+
+.competition-form__radio {
+  display: none;
+}
+
+.competition-form__legend-name {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $basic-red;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  @include vh();
+  &:focus {
+    + label {
+      &:before {
+      }
+    }
+  }
+  + label {
+    position: relative;
+    padding: 0.5rem 0 0 2rem;
+    margin-bottom: 1rem;
+    user-select: none;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      border: 2px solid #e5e5e5;
+      border-radius: 0.25rem;
+      text-align: center;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      transform: scale(0);
+      transition: transform 200ms ease-out;
+    }
+  }
+}
+
+input[type="checkbox"] {
+  + label {
+    &:after {
+      background-color: transparent;
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0.65rem;
+      top: 0.25rem;
+      width: 0.5rem;
+      height: 1rem;
+      opacity: 0;
+      border-bottom: 2px solid $basic-red;
+      border-right: 2px solid $basic-red;
+      transform: rotate(45deg);
+      transition: border-color 0.3s ease;
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        content: "";
+      }
+
+      &:after {
+        content: "";
+        opacity: 1;
+      }
+    }
+  }
+}
+
+input[type="radio"] {
+  + label {
+    &:before,
+    &:after {
+      border-radius: 50%;
+    }
+    &:after {
+      top: 9px;
+      left: 9px;
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        animation: borderscale 300ms ease-in;
+      }
+      &:after {
+        transform: scale(1);
+      }
+    }
+  }
 }

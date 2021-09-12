@@ -7,21 +7,3 @@
     background-color: $black-bg;
   }
 }
-
-.main-nav__logo-wrapper {
-  display: flex;
-  justify-content: center;
-  display: none;
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-.main-nav__toggle-svg {
-  &:hover path {
-    fill: $basic-red;
-  }
-  &:active path {
-    opacity: 0.3;
-  }
-}

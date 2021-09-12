@@ -3,9 +3,10 @@
   background-repeat: no-repeat;
   background-size: 101% auto;
   background-position: 50% 0;
+  display: flex;
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-end;
     background-image: url(../img/grey-background-tablet.png);
   }
 }
