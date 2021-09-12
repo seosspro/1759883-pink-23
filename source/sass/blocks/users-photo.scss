@@ -1,6 +1,5 @@
 .users-photo {
   padding: 0;
-  align-items: center;
   justify-content: center;
   @media (min-width: $tablet-width) {
     display: flex;
@@ -10,22 +9,35 @@
   @media (min-width: $desktop-width) {
   }
 }
+
 .users-photo__title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 24px;
   color: $white;
   background-color: $basic-red;
+  position: absolute;
+  padding: 7px 23px 6px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  right: 20px;
+  @media (min-width: $tablet-width) {
+  }
 }
+
 .users-photo__item {
   list-style: none;
   display: inline-block;
   background-color: $grey;
+  overflow: hidden;
   width: 280px;
   margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
+
 .users-photo__user-name {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -34,6 +46,7 @@
   line-height: 24px;
   color: $dark-blue;
 }
+
 .users-photo__publication-date {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -43,6 +56,7 @@
   color: $dark-blue;
   text-transform: uppercase;
 }
+
 .users-photo__comment {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -51,6 +65,7 @@
   line-height: 24px;
   color: $dark-blue;
 }
+
 .users-photo__likes {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -59,4 +74,31 @@
   line-height: 24px;
   color: $basic-red;
   text-transform: uppercase;
+}
+
+.users-photo__phone-img {
+  display: block;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.users-photo__tablet-img {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.users-photo__desk-img {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

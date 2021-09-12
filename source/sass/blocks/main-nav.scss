@@ -1,8 +1,9 @@
 .main-nav {
   min-width: 100%;
-  background-color: $black-bg;
+  background-color: $dark-blue;
   @media (min-width: $tablet-width) {
   }
   @media (min-width: $desktop-width) {
+    background-color: $black-bg;
   }
 }

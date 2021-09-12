@@ -6,7 +6,17 @@
   line-height: 30px;
   color: $dark-blue;
   text-align: center;
+  @media (min-width: $tablet-width) {
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 67px;
+    margin-bottom: 75px;
+  }
 }
+
 .upload__button {
   border: 3px solid #d22856;
   box-sizing: border-box;
@@ -35,5 +45,23 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.upload__cancel {
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgba(40, 54, 69, 0.1);
+  padding: 21px 90px;
+  margin-bottom: 12px;
+  margin-top: 38px;
+  @media (min-width: $desktop-width) {
+    margin-left: 44px;
   }
 }

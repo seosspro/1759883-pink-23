@@ -5,6 +5,7 @@
     text-align: center;
   }
 }
+
 .reviews__info {
   @media (min-width: $mobile-width) {
     display: none;
@@ -19,6 +20,7 @@
   line-height: 30px;
   color: $dark-blue;
 }
+
 .reviews__user {
   text-align: center;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -28,6 +30,7 @@
   line-height: 30px;
   color: $black;
 }
+
 .reviews__comment {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -35,4 +38,10 @@
   font-size: 14px;
   line-height: 30px;
   color: $dark-blue;
+}
+
+.reviews__slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

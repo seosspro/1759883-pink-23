@@ -1,9 +1,10 @@
 .advantages {
+  @media (min-width: $tablet-width) {
+  }
   @media (min-width: $desktop-width) {
     background-image: url(../img/grey-background.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 100%;
   }
 }
 
@@ -15,9 +16,61 @@
   line-height: 24px;
   color: $dark-blue;
 }
-.advantages__item {
+
+.advantages__item-grey {
   list-style: none;
+  position: relative;
+  @media (min-width: $desktop-width) {
+    margin-top: 360px;
+    &::before {
+      top: -350px;
+      left: -40px;
+      background-image: url(../img/phone-grey-screen.png);
+      background-repeat: no-repeat;
+      content: "";
+      position: absolute;
+      width: 292px;
+      height: 302px;
+    }
+  }
 }
+
+.advantages__item-pink {
+  list-style: none;
+  position: relative;
+  @media (min-width: $desktop-width) {
+    margin-top: 360px;
+    &::before {
+      background-image: url(../img/phone-pink-screen.png);
+      top: -350px;
+      left: -40px;
+      background-repeat: no-repeat;
+      content: "";
+      position: absolute;
+      width: 292px;
+      height: 302px;
+    }
+  }
+}
+
+.advantages__item-hello {
+  list-style: none;
+  position: relative;
+  @media (min-width: $desktop-width) {
+    margin-top: 360px;
+    &::before {
+      top: -350px;
+      left: -40px;
+      background-image: url(../img/hello-phone-screen.png);
+      background-repeat: no-repeat;
+      content: "";
+      position: absolute;
+      width: 292px;
+      height: 302px;
+    }
+  }
+}
+
 .advantages__title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -26,26 +79,47 @@
   line-height: 24px;
   color: $black;
 }
+
 .advantages__list {
   padding: 0;
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: url(../img/grey-background.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 100%;
   @media (min-width: $tablet-width) {
   }
   @media (min-width: $desktop-width) {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     column-gap: 78px;
   }
 }
-.advantages__img {
+
+.advantages__img-phone {
+  display: flex;
+  align-items: center;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.advantages__img-tablet {
+  display: flex;
+  align-items: center;
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.advantages__img-2 {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

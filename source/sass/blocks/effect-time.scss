@@ -1,0 +1,12 @@
+.effect-time {
+  display: flex;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+    br {
+      display: none;
+    }
+  }
+}
