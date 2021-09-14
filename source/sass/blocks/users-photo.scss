@@ -64,6 +64,16 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue;
+  padding-left: 17px;
+  padding-right: 31px;
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 38px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 27px;
+    padding-right: 17px;
+  }
 }
 
 .users-photo__likes {
@@ -101,4 +111,8 @@
   @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+.users-photo__btn {
+  border: none;
 }

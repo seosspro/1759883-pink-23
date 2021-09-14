@@ -22,24 +22,28 @@
   }
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
+    width: 48%;
   }
 }
 
 .competition-form__fieldset-name {
   border: none;
   margin-bottom: 44px;
+  padding: 0 20px;
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 0px;
     order: -2;
   }
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
+    width: 46%;
   }
 }
 
 .competition-form__fieldset-address {
   border: none;
   margin-bottom: 44px;
+  padding: 0 20px;
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
     border: 2px solid #e5e5e5;
@@ -55,12 +59,14 @@
 .competition-form__fieldset-emotion {
   margin-bottom: 44px;
   border: none;
+  padding: 0 20px;
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
     border: 2px solid #e5e5e5;
     border-radius: 2px;
   }
   @media (min-width: $desktop-width) {
+    width: 100%;
     margin-bottom: 69px;
   }
 }
@@ -70,6 +76,9 @@
   border: none;
   padding: 28px 0 30px;
   margin-bottom: 44px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 0 20px;
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
     border: 2px solid #e5e5e5;
@@ -121,12 +130,28 @@
     list-style: none;
     &:not(:last-child) {
       padding-bottom: 69px;
+      @media (min-width: $desktop-width) {
+        padding-bottom: 0;
+      }
     }
+  }
+}
+
+.competition-form__item-name {
+  list-style: none;
+  margin-bottom: 45px;
+  &:not(:last-child) {
+    margin-bottom: 56px;
   }
 }
 
 .competition-form__item-address {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 3px;
+  margin-bottom: 29px;
 }
 
 .competition-form__legend {
@@ -196,7 +221,6 @@
   padding-right: 20px;
   border: 2px solid $special-white;
   border-radius: 1px;
-  margin-bottom: 56px;
   font-family: "Arial", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -204,10 +228,13 @@
   line-height: 30px;
   cursor: pointer;
   &:hover {
-    color: $black;
+    border: 2px solid $black;
   }
-  &:active {
-    color: $basic-red;
+  &:focus {
+    border: 2px solid $basic-red;
+  }
+  @media (min-width: $tablet-width) {
+    width: 100%;
   }
 }
 
@@ -226,6 +253,12 @@
   line-height: 30px;
   cursor: pointer;
   position: relative;
+  &:hover {
+    border: 2px solid $black;
+  }
+  &:focus {
+    border: 2px solid $basic-red;
+  }
 }
 
 .competition-form__textarea {
@@ -249,6 +282,13 @@
   padding-top: 15px;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+  @media (min-width: $tablet-width) {
+  }
+  @media (min-width: $desktop-width) {
+    min-height: 124px;
+    margin-top: 44px;
+    margin-bottom: 45px;
+  }
 }
 
 .competition-form__list {
@@ -474,4 +514,11 @@ input[type="radio"] {
 .competition-form__icon-phone {
   margin-top: 23px;
   margin-left: 21px;
+}
+
+.competition-form__list-apps {
+  padding: 0;
+  margin: 0;
+  margin-left: 74px;
+  margin-top: 49px;
 }
