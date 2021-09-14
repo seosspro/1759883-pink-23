@@ -5,6 +5,7 @@
   background-position: 50% 0;
   display: flex;
   @media (min-width: $tablet-width) {
+    align-items: flex-end;
     justify-content: flex-end;
     align-items: flex-end;
     background-image: url(../img/grey-background-tablet.png);
