@@ -7,4 +7,16 @@
   font-size: 14px;
   line-height: 30px;
   color: $dark-blue;
+  margin-top: 54px;
+  margin-bottom: 55px;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-top: 100px;
+    margin-bottom: 82px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 100px;
+    margin-bottom: 89px;
+  }
 }

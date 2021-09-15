@@ -1,13 +1,14 @@
 .advantages-wrapper {
-  background-image: url(../img/grey-background-advantages.png);
+  background-image: url(../img/hellophone-mobile.png),
+    url(../img/grey-background-advantages.png);
   background-repeat: no-repeat;
-  background-size: 101% auto;
-  background-position: 50% 0;
-  display: flex;
+  background-size: auto, 101% auto;
+  background-position: bottom, 50% 0;
   @media (min-width: $tablet-width) {
-    align-items: flex-end;
-    justify-content: flex-end;
-    align-items: flex-end;
     background-image: url(../img/grey-background-tablet.png);
+    background-size: 101% auto;
+    background-position: 50% 0;
+    display: flex;
+    justify-content: flex-end;
   }
 }

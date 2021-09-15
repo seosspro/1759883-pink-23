@@ -64,6 +64,10 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue;
+  @media (min-width: $tablet-width) {
+  }
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .users-photo__likes {
@@ -74,31 +78,14 @@
   line-height: 24px;
   color: $basic-red;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.users-photo__phone-img {
-  display: block;
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+.users-photo__btn {
+  border: none;
+  cursor: pointer;
 }
 
-.users-photo__tablet-img {
-  display: none;
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.users-photo__desk-img {
-  display: none;
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
+.users-photo__item-wrapper {
+  padding: 18px 19px 20px;
 }

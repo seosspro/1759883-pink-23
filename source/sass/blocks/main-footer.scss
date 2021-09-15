@@ -63,3 +63,10 @@
   left: 100px;
   top: -5px;
 }
+
+.main-footer__copyright {
+  margin-bottom: 51px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}

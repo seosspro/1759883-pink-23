@@ -66,6 +66,9 @@
   &:nth-child(2) {
     border-left: none;
   }
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .prices__list-thead {
@@ -132,13 +135,15 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
-    display: flex;
-    align-items: center;
     padding-top: 16px;
     padding-bottom: 20px;
     padding-left: 17px;
     padding-right: 24px;
     border-right: none;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -146,7 +151,7 @@
   margin-top: 2px;
   margin-bottom: 0;
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .prices__value-flag {
