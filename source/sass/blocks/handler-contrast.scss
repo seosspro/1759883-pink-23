@@ -1,0 +1,16 @@
+.handler-contrast__toggle {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .handler-contrast__toggle {
+    left: 115px;
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .handler-contrast__toggle {
+    left: 212px;
+  }
+}

@@ -64,10 +64,12 @@
     margin-bottom: 70px;
     border: 2px solid #e5e5e5;
     border-radius: 2px;
+    padding: 0 60px;
   }
   @media (min-width: $desktop-width) {
     width: 100%;
     margin-bottom: 69px;
+    padding: 0 62px;
   }
 }
 
@@ -100,6 +102,8 @@
   line-height: 30px;
   color: $basic-red;
   padding-left: 23px;
+  margin-right: 20px;
+  margin-top: 25px;
 }
 
 .competition-form__label--address {
@@ -140,6 +144,7 @@
 .competition-form__item-name {
   list-style: none;
   margin-bottom: 45px;
+  display: flex;
   &:not(:last-child) {
     margin-bottom: 56px;
   }
@@ -187,8 +192,8 @@
 }
 
 .competition-form__submit-button {
-  background: $green;
-  border: 2px solid $green;
+  background: $green2;
+  border: 2px solid $green2;
   border-radius: 1px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -227,6 +232,7 @@
   font-size: 18px;
   line-height: 30px;
   cursor: pointer;
+  flex-grow: 1;
   &:hover {
     border: 2px solid $black;
   }
@@ -358,6 +364,7 @@
     background-color: #fff;
     border: 2px solid #e5e5e5;
     border-radius: 50%;
+    margin-right: 20px;
     &:checked {
       border-color: $dark-blue;
       transition: 0.2s;
@@ -407,7 +414,7 @@ input[type="radio"] {
   }
   + label {
     position: relative;
-    padding: 5px 0 0 52px;
+    width: 269px;
     margin-bottom: 1rem;
     user-select: none;
     margin-bottom: 62px;
@@ -497,21 +504,25 @@ input[type="radio"] {
 }
 
 .competition-form__icon-mail {
+  display: none;
   margin-top: 23px;
   margin-left: 21px;
 }
 
 .competition-form__svg-wrapper {
-  display: none;
-  background-color: $grey;
   @media (min-width: $tablet-width) {
     display: block;
     width: 59px;
     height: 59px;
   }
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
+  }
 }
 
 .competition-form__icon-phone {
+  display: none;
   margin-top: 23px;
   margin-left: 21px;
 }
@@ -521,4 +532,14 @@ input[type="radio"] {
   margin: 0;
   margin-left: 74px;
   margin-top: 49px;
+}
+
+.competition-form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

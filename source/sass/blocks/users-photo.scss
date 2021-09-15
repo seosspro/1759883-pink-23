@@ -64,15 +64,9 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue;
-  padding-left: 17px;
-  padding-right: 31px;
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 38px;
   }
   @media (min-width: $desktop-width) {
-    padding-left: 27px;
-    padding-right: 17px;
   }
 }
 
@@ -84,35 +78,14 @@
   line-height: 24px;
   color: $basic-red;
   text-transform: uppercase;
-}
-
-.users-photo__phone-img {
-  display: block;
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.users-photo__tablet-img {
-  display: none;
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.users-photo__desk-img {
-  display: none;
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
+  cursor: pointer;
 }
 
 .users-photo__btn {
   border: none;
+  cursor: pointer;
+}
+
+.users-photo__item-wrapper {
+  padding: 18px 19px 20px;
 }

@@ -15,6 +15,13 @@
   font-size: 14px;
   line-height: 24px;
   color: $basic-red;
+  margin-left: 57px;
+  margin-top: 24px;
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 67px;
+  }
 }
 
 .research__text {
@@ -24,6 +31,16 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue;
+  text-align: left;
+  @media (min-width: $tablet-width) {
+    margin-left: 105px;
+    margin-top: 24px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 170px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .research__title {
@@ -33,4 +50,11 @@
   font-size: 30px;
   line-height: 36px;
   color: $black;
+}
+
+.research__br {
+  display: block;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
