@@ -85,8 +85,9 @@
             </svg>
           </a>
         </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item--active"><a class="site-list__link--active" href="index.html">Главная</a></li>
+        <ul class="site-list">
+          <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active"
+              href="index.html">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="catalog.html">Фотографии</a></li>
           <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
           <li class="site-list__item"><a class="site-list__link"
@@ -183,10 +184,6 @@
         </div>
         <div class="research-wrapper">
           <div class="effect-time container">
-            <div class="clock">
-              <img class="clock__img" src="img/clock.svg" alt="Изображение часов с числом 24">
-              <img class="clock__img-tablet" src="img/clock-tablet.png" alt="Изображение часов с числом 24">
-            </div>
             <div class="research">
               <h3 class="research__title">Эффект <br class="research__br"> на 24 часа!</h3>
               <p class="research__text">
@@ -228,9 +225,9 @@
                 </svg>
               </button>
               <div class="reviews__slider-wrapper">
-                <label class="slider-items__btn slider-items__btn--active" for="radio1">1</label>
-                <label class="slider-items__btn" for="radio2">2</label>
-                <label class="slider-items__btn" for="radio3">3</label>
+                <label class="reviews__btn reviews__btn--active" for="radio1">1</label>
+                <label class="reviews__btn" for="radio2">2</label>
+                <label class="reviews__btn" for="radio3">3</label>
               </div>
             </div>
           </div>
@@ -243,9 +240,6 @@
     <section class="prices">
       <div class="prices__wrapper">
         <div class="prices__items">
-          <input class="prices__switcher" type="radio" name="price" id="radio1">
-          <input class="prices__switcher" type="radio" name="price" id="radio2" checked>
-          <input class="prices__switcher" type="radio" name="price" id="radio3">
           <table class="prices__list">
             <thead class="prices__list-thead">
               <tr>
@@ -375,8 +369,8 @@
   <footer class="main-footer">
     <div class="main-footer__container">
       <div class="footer-logo">
-        <a class="main-footer__desk-logo" href="index.html">
-          <svg class="main-footer_desk-logo" width="147" height="40" viewBox="0 0 147 40" fill="none"
+        <a class="main-footer__logo" href="index.html">
+          <svg class="main-footer__desk-logo" width="147" height="40" viewBox="0 0 147 40" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M72.1933 18.4251C72.1932 18.0924 72.3255 17.7728 72.562 17.5348C72.7985 17.2967 73.1204 17.1591 73.4588 17.1514H80.6703C85.7826 17.1514 89.1473 19.8272 89.1473 24.2113V24.2705C89.1473 29.0693 85.0695 31.5575 80.2484 31.5575H74.7544V38.2916C74.7702 38.4663 74.7488 38.6423 74.6916 38.8084C74.6344 38.9745 74.5426 39.1271 74.4222 39.2565C74.3017 39.3859 74.1552 39.4892 73.992 39.5599C73.8287 39.6306 73.6522 39.6671 73.4738 39.6671C73.2954 39.6671 73.119 39.6306 72.9557 39.5599C72.7925 39.4892 72.6459 39.3859 72.5255 39.2565C72.405 39.1271 72.3133 38.9745 72.2561 38.8084C72.1989 38.6423 72.1775 38.4663 72.1933 38.2916V18.4251ZM80.3489 29.2865C84.0952 29.2865 86.556 27.3117 86.556 24.3495V24.2903C86.556 21.1108 84.1354 19.4619 80.5297 19.4619H74.8047V29.247L80.3489 29.2865Z"
@@ -409,10 +403,8 @@
               d="M10.785 33.6406C10.056 33.6354 9.35856 33.347 8.84491 32.8384C8.33126 32.3297 8.04302 31.642 8.04303 30.9253C8.04304 31.6437 7.75342 32.3329 7.2376 32.8419C6.72178 33.3508 6.02182 33.638 5.29102 33.6406C6.02182 33.6433 6.72178 33.9305 7.2376 34.4394C7.75342 34.9484 8.04304 35.6375 8.04303 36.356C8.04302 35.6392 8.33126 34.9516 8.84491 34.4429C9.35856 33.9342 10.056 33.6459 10.785 33.6406Z"
               fill="#283645" />
           </svg>
-
-        </a>
-        <a class="main-footer__logo" href="index.html">
-          <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main-footer__svg-logo" width="145" height="40" viewBox="0 0 145 40" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M71.005 18.5486C71.0049 18.2125 71.1358 17.8898 71.3697 17.6494C71.6037 17.409 71.922 17.2701 72.2568 17.2623H79.39C84.4469 17.2623 87.7751 19.9645 87.7751 24.3918V24.4516C87.7751 29.2977 83.7415 31.8105 78.9727 31.8105H73.5384V38.611C73.5539 38.7874 73.5328 38.9651 73.4762 39.1329C73.4196 39.3006 73.3289 39.4547 73.2097 39.5854C73.0906 39.716 72.9457 39.8204 72.7842 39.8918C72.6227 39.9631 72.4481 40 72.2717 40C72.0952 40 71.9207 39.9631 71.7592 39.8918C71.5977 39.8204 71.4527 39.716 71.3336 39.5854C71.2145 39.4547 71.1237 39.3006 71.0671 39.1329C71.0106 38.9651 70.9894 38.7874 71.005 38.611V18.5486ZM79.0721 29.5171C82.7778 29.5171 85.2119 27.5228 85.2119 24.5314V24.4716C85.2119 21.2608 82.8175 19.5956 79.2509 19.5956H73.588V29.4772L79.0721 29.5171Z"
               fill="#283645" />

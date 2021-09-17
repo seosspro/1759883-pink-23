@@ -41,3 +41,72 @@
   width: 100%;
   display: block;
 }
+
+.catalog-main__span-title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: $white;
+  background-color: $basic-red;
+  position: absolute;
+  padding: 7px 23px 6px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  right: 20px;
+  @media (min-width: $tablet-width) {
+  }
+}
+
+.catalog-main__user-name {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-blue;
+}
+
+.catalog-main__publication-date {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: $dark-blue;
+  text-transform: uppercase;
+}
+
+.catalog-main__comment {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-blue;
+}
+
+.catalog-main__likes {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: $basic-red;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.catalog-main__btn {
+  border: none;
+  cursor: pointer;
+}
+
+.catalog-main__btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}

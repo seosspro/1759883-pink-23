@@ -39,9 +39,6 @@
   &:hover path {
     fill: $basic-red;
   }
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 
 .main-footer__desk-logo {
@@ -68,5 +65,11 @@
   margin-bottom: 51px;
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.main-footer__svg-logo {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

@@ -71,7 +71,7 @@
 
 .handle-form__toggle {
   position: absolute;
-  top: -5px;
+  top: -7px;
   left: 5px;
   width: 14px;
   height: 14px;
@@ -229,7 +229,7 @@
     &::after {
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: -10px;
       content: "";
       width: 275px;
       height: 1px;

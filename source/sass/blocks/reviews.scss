@@ -131,3 +131,21 @@
 .reviews__arrow-right {
   right: 0;
 }
+
+.reviews__btn {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+  width: 6px;
+  height: 6px;
+  margin-right: 20px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.reviews__btn--active {
+  background-color: #fff;
+  border: 3px solid #283645;
+}
