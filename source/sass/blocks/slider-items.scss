@@ -8,6 +8,7 @@
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 21px;
+
   .slider-items.prices__nav {
     margin-top: 20px;
   }
@@ -33,6 +34,6 @@
 }
 
 .slider-items__btn--active {
-  background-color: #fff;
-  border: 3px solid #283645;
+  background-color: $white;
+  border: 3px solid $dark-blue;
 }

@@ -1,21 +1,23 @@
 .prices {
-  background-image: url(../img/background-mobile-table.png);
+  background-image: url("../img/background-mobile-table.png");
   padding-top: 210px;
   padding-bottom: 26px;
   background-repeat: no-repeat;
   background-size: 150% auto;
   background-position: 50% 0;
+
   @media (min-width: $tablet-width) {
-    background-image: url(../img/background-tablet-table.png);
+    background-image: url("../img/background-tablet-table.png");
     padding-top: 120px;
     padding-bottom: 70px;
     background-repeat: no-repeat;
     background-size: 150% auto;
     background-position: 50% 0;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 160px;
-    background-image: url(../img/background-desk-table.png);
+    background-image: url("../img/background-desk-table.png");
   }
 }
 
@@ -41,8 +43,8 @@
   padding-top: 16px;
   padding-bottom: 13px;
   padding-left: 22px;
-  border: 2px solid #e5e5e5;
-  border-top: none;
+  border: 2px solid $grey2;
+
   @media (min-width: $tablet-width) {
     min-width: 154px;
     padding: 7px 15px;
@@ -62,10 +64,12 @@
   box-sizing: border-box;
   padding-top: 16px;
   padding-bottom: 20px;
-  border-left: 2px solid #e5e5e5;
+  border-left: 2px solid $grey2;
+
   &:nth-child(2) {
     border-left: none;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
@@ -77,6 +81,7 @@
   text-transform: uppercase;
   color: $white;
   background-color: $dark-blue;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
   }
@@ -98,10 +103,12 @@
   border-spacing: 0;
   width: 840px;
   box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     transform: none;
     width: 620px;
   }
+
   @media (min-width: $desktop-width) {
     min-width: 940px;
   }
@@ -123,6 +130,7 @@
   font-size: 0;
   line-height: 0;
   background-color: $grey;
+
   @media (min-width: $tablet-width) {
     background-color: unset;
     text-transform: none;
@@ -137,6 +145,7 @@
     padding-right: 24px;
     border-right: none;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
@@ -151,7 +160,7 @@
 }
 
 .prices__value-flag {
-  &:before {
+  &::before {
     position: absolute;
     content: "хит";
     height: 10px;
@@ -159,17 +168,59 @@
     font-weight: normal;
     width: 28px;
     top: 10px;
-    left: 20px;
+    left: -10px;
     font-size: 14px;
     line-height: 14px;
     text-align: center;
     text-transform: uppercase;
     color: $white;
-    background-color: $basic-red;
     transform: rotate(-45deg);
     z-index: 10;
     padding: 9px 22px 12px 25px;
     overflow: hidden;
+
+    @media (min-width: $tablet-width) {
+      top: 8px;
+      left: -19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 10px;
+      left: -10px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -1px;
+    width: 74px;
+    height: 74px;
+    background-image: url("../img/ribbon-mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      top: -1px;
+      left: -1px;
+      background-image: url("../img/ribbon-tablet.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $desktop-width) {
+        position: absolute;
+        content: "";
+        top: -1px;
+        left: -1px;
+        width: 74px;
+        height: 74px;
+        background-image: url("../img/ribbon-mobile.svg");
+        background-repeat: no-repeat;
+      }
+    }
   }
 }
 
@@ -188,14 +239,15 @@
 }
 
 .prices__value-empty {
-  background-color: #f2f2f2;
-  border-bottom: 2px solid #e5e5e5;
+  background-color: $grey;
+  border-bottom: 2px solid $grey2;
   border: none;
 }
 
 .prices__icon-no {
   position: absolute;
   right: 21px;
+
   @media (min-width: $tablet-width) {
     right: 0;
     left: 0;
@@ -209,6 +261,7 @@
 .prices__icon-yes {
   position: absolute;
   right: 21px;
+
   @media (min-width: $tablet-width) {
     right: 0;
     left: 0;

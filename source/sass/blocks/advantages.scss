@@ -1,9 +1,6 @@
 .advantages {
-  @media (min-width: $tablet-width) {
-  }
-
   @media (min-width: $desktop-width) {
-    background-image: url(../img/grey-background.png);
+    background-image: url("../img/grey-background.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -16,6 +13,7 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue;
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
@@ -28,15 +26,21 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 360px;
+
     &::before {
       top: -350px;
       left: -40px;
-      background-image: url(../img/phone-grey-screen.png);
+      background-image: url("../img/phone-grey-screen@1x.png");
       background-repeat: no-repeat;
       content: "";
       position: absolute;
       width: 292px;
       height: 302px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-grey-screen@2x.png");
+        background-size: 292px auto;
+      }
     }
   }
 }
@@ -49,7 +53,7 @@
     margin-top: 360px;
 
     &::before {
-      background-image: url(../img/phone-pink-screen.png);
+      background-image: url("../img/phone-pink-screen@1x.png");
       top: -350px;
       left: -40px;
       background-repeat: no-repeat;
@@ -57,6 +61,11 @@
       position: absolute;
       width: 292px;
       height: 302px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-pink-screen@2x.png");
+        background-size: 292px auto;
+      }
     }
   }
 }
@@ -72,15 +81,21 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 59px;
     margin-top: 360px;
+
     &::before {
       top: -350px;
       left: -40px;
-      background-image: url(../img/hello-phone-screen.png);
+      background-image: url("../img/hello-phone-screen@1x.png");
       background-repeat: no-repeat;
       content: "";
       position: absolute;
       width: 292px;
       height: 302px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hello-phone-screen@2x.png");
+        background-size: 292px auto;
+      }
     }
   }
 }
@@ -129,12 +144,11 @@
 }
 
 .advantages__img-tablet {
-  display: flex;
-  align-items: center;
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {

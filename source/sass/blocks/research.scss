@@ -1,13 +1,14 @@
 .research {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   display: none;
+
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     margin-top: 102px;
-    display: block;
   }
 }
+
 .research__link {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -17,6 +18,7 @@
   color: $basic-red;
   margin-left: 57px;
   margin-top: 24px;
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
@@ -32,10 +34,12 @@
   line-height: 24px;
   color: $dark-blue;
   text-align: left;
+
   @media (min-width: $tablet-width) {
     margin-left: 105px;
     margin-top: 24px;
   }
+
   @media (min-width: $desktop-width) {
     margin-left: 170px;
     font-size: 18px;
@@ -54,6 +58,7 @@
 
 .research__br {
   display: block;
+
   @media (min-width: $desktop-width) {
     display: none;
   }

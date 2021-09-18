@@ -14,9 +14,11 @@
   font-size: 14px;
   line-height: 30px;
   color: $dark-blue;
+
   @media (min-width: $tablet-width) {
     display: block;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
@@ -30,10 +32,12 @@
   font-size: 18px;
   line-height: 30px;
   color: $black;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 17px;
     font-size: 20px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 24px;
   }
@@ -46,6 +50,7 @@
   font-size: 14px;
   line-height: 30px;
   color: $dark-blue;
+
   @media (min-width: $tablet-width) {
     order: -1;
     font-size: 18px;
@@ -56,6 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -65,9 +71,10 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
   @media (min-width: $desktop-width) {
     padding-top: 192px;
-    background-image: url(../img/quotes.svg);
+    background-image: url("../img/quotes.svg");
     background-size: 80px 63px;
     background-repeat: no-repeat;
     background-position: 50% 72px;
@@ -76,6 +83,7 @@
 
 .reviews__btn-left {
   display: none;
+
   @media (min-width: $desktop-width) {
     display: block;
     position: absolute;
@@ -92,6 +100,7 @@
     outline: none;
     cursor: pointer;
     z-index: 1;
+
     &:hover path {
       fill: $dark-blue;
     }
@@ -100,6 +109,7 @@
 
 .reviews__btn-right {
   display: none;
+
   @media (min-width: $desktop-width) {
     position: absolute;
     fill: #bec2c7;
@@ -117,6 +127,7 @@
     outline: none;
     cursor: pointer;
     z-index: 1;
+
     &:hover path {
       fill: $dark-blue;
     }
@@ -146,6 +157,6 @@
 }
 
 .reviews__btn--active {
-  background-color: #fff;
-  border: 3px solid #283645;
+  background-color: $white;
+  border: 3px solid $dark-blue;
 }

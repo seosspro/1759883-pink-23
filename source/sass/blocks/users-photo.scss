@@ -1,12 +1,11 @@
 .users-photo {
   padding: 0;
   justify-content: center;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  @media (min-width: $desktop-width) {
   }
 }
 
@@ -15,11 +14,7 @@
   display: inline-block;
   background-color: $grey;
   overflow: hidden;
-  width: 280px;
   margin-bottom: 20px;
-  @media (min-width: $tablet-width) {
-    width: 300px;
-  }
 }
 
 .users-photo__user-name {
@@ -48,9 +43,9 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue;
-  @media (min-width: $tablet-width) {
-  }
-  @media (min-width: $desktop-width) {
+  margin-top: 0;
+  &--one {
+    margin-bottom: 37px;
   }
 }
 
@@ -63,6 +58,7 @@
   color: $basic-red;
   text-transform: uppercase;
   cursor: pointer;
+  margin: 0;
 }
 
 .users-photo__btn {
@@ -71,12 +67,24 @@
 }
 
 .users-photo__item-wrapper {
-  padding: 18px 19px 20px;
+  padding: 18px 10px 17px 18px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    max-height: 155px;
+    padding: 23px 30px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 22px 27px 25px;
+  }
 }
 
 .users-photo__btn-wrapper {
   display: flex;
   flex-direction: row;
+
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
     justify-content: space-between;

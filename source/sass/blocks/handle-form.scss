@@ -14,11 +14,13 @@
   text-align: center;
   margin-top: 49px;
   margin-bottom: 52px;
+
   @media (min-width: $tablet-width) {
     margin-top: 73px;
     margin-bottom: 78px;
     font-size: 18px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
@@ -96,6 +98,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -125,7 +128,11 @@
   border-color: $dark-blue;
   color: $dark-blue;
   opacity: 0.1;
-  font-family: inherit;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
 
   &:hover {
     opacity: 0.3;
@@ -139,6 +146,12 @@
 }
 
 .handle-form__submit-button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+
   &:hover {
     background-color: $basic-red;
     color: $white;
@@ -328,20 +341,4 @@
 
 .handle-form__handler-contrast {
   border: none;
-}
-
-.handle-form__submit-button {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-}
-
-.handle-form__cancel-button {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
 }

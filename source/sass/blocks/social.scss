@@ -3,6 +3,7 @@
   align-items: center;
   padding: 0;
   margin-bottom: 53px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
@@ -15,7 +16,6 @@
 .social__icon {
   position: absolute;
   content: "";
-  top: 0;
   left: 17px;
   top: 15px;
 }
@@ -23,7 +23,6 @@
 .social__link {
   display: flex;
   align-items: center;
-  display: inline-block;
   vertical-align: middle;
   position: relative;
   margin: 0 6px;
@@ -31,12 +30,14 @@
   height: 47px;
   font-size: 0;
   line-height: 0;
-  background-color: #fff;
+  background-color: $white;
   border: 2px solid #e9ebec;
   border-radius: 50%;
+
   &:hover {
-    border: 2px solid black;
+    border: 2px solid $black;
   }
+
   &:active {
     opacity: 0.1;
   }

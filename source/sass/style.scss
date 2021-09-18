@@ -1,5 +1,4 @@
 @import "global/fonts.scss";
-@import "global/mixins.scss";
 @import "global/variables.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -7,7 +6,6 @@
 @import "blocks/main-info.scss";
 @import "blocks/site-list.scss";
 @import "blocks/store.scss";
-@import "blocks/page-main.scss";
 @import "blocks/offer.scss";
 @import "blocks/advantages.scss";
 @import "blocks/research.scss";
@@ -24,7 +22,6 @@
 @import "blocks/container.scss";
 @import "blocks/page-body.scss";
 @import "blocks/header-inner.scss";
-@import "blocks/img-wrapper.scss";
 @import "blocks/research-wrapper.scss";
 @import "blocks/clock.scss";
 @import "blocks/main-inner.scss";
@@ -39,9 +36,7 @@
 @import "blocks/footer-logo.scss";
 @import "blocks/slider-items.scss";
 @import "blocks/main-header.scss";
-@import "blocks/checkbox.scss";
 @import "blocks/popup.scss";
-@import "blocks/form-btn.scss";
 @import "blocks/form-wrapper.scss";
 @import "blocks/switcher.scss";
 @import "blocks/handle-form.scss";

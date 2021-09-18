@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 44px;
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -13,6 +14,7 @@
   border: none;
   padding: 0;
   margin-bottom: 44px;
+
   @media (min-width: $tablet-width) {
     border: 2px solid #e5e5e5;
     border-radius: 2px;
@@ -20,6 +22,7 @@
     order: -2;
     margin-bottom: 70px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
     width: 48%;
@@ -30,10 +33,12 @@
   border: none;
   margin-bottom: 44px;
   padding: 0 20px;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 0px;
+    margin-bottom: unset;
     order: -2;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
     width: 46%;
@@ -44,12 +49,14 @@
   border: none;
   margin-bottom: 44px;
   padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $grey2;
     border-radius: 2px;
     order: -1;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
     width: 100%;
@@ -60,12 +67,14 @@
   margin-bottom: 44px;
   border: none;
   padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $grey2;
     border-radius: 2px;
     padding: 47px 60px;
   }
+
   @media (min-width: $desktop-width) {
     width: 100%;
     margin-bottom: 69px;
@@ -78,15 +87,14 @@
   border: none;
   padding: 28px 0 30px;
   margin-bottom: 44px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $grey2;
     border-radius: 2px;
     background-color: unset;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
     width: 100%;
@@ -130,10 +138,13 @@
 
 .competition-form__item {
   list-style: none;
+
   &--ach {
     list-style: none;
+
     &:not(:last-child) {
       padding-bottom: 69px;
+
       @media (min-width: $desktop-width) {
         padding-bottom: 0;
       }
@@ -145,6 +156,7 @@
   list-style: none;
   margin-bottom: 45px;
   display: flex;
+
   &:not(:last-child) {
     margin-bottom: 56px;
   }
@@ -233,12 +245,15 @@
   line-height: 30px;
   cursor: pointer;
   flex-grow: 1;
+
   &:hover {
     border: 2px solid $black;
   }
+
   &:focus {
     border: 2px solid $basic-red;
   }
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }
@@ -259,17 +274,17 @@
   line-height: 30px;
   cursor: pointer;
   position: relative;
+
   &:hover {
     border: 2px solid $black;
   }
+
   &:focus {
     border: 2px solid $basic-red;
   }
 }
 
 .competition-form__textarea {
-  border: 2px solid $special-white;
-  border-radius: 1px;
   font-family: "Arial", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -279,17 +294,14 @@
   padding-top: 22px;
   width: 276px;
   height: 197px;
-  width: 100%;
   box-sizing: border-box;
   min-height: 201px;
   margin-top: 6px;
   padding-left: 21px;
   padding-right: 21px;
-  padding-top: 15px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $grey2;
   border-radius: 2px;
-  @media (min-width: $tablet-width) {
-  }
+
   @media (min-width: $desktop-width) {
     min-height: 124px;
     margin-top: 44px;
@@ -306,6 +318,7 @@
 .competition-form__address-list {
   padding: 0;
   margin: 0;
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -328,9 +341,11 @@
   position: relative;
   font-size: 18px;
   line-height: 30px;
+
   &:hover {
     cursor: pointer;
   }
+
   &::before {
     content: "";
     display: inline-block;
@@ -338,8 +353,8 @@
     width: 35px;
     height: 35px;
     margin-right: 31px;
-    background-color: #fff;
-    border: 2px solid #e5e5e5;
+    background-color: $white;
+    border: 2px solid $grey2;
   }
 }
 
@@ -354,22 +369,24 @@
   color: $dark-blue;
   position: relative;
   cursor: pointer;
+
   &::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
     width: 35px;
     height: 35px;
-    margin-right: 31px;
-    background-color: #fff;
-    border: 2px solid #e5e5e5;
+    background-color: $white;
+    border: 2px solid $grey2;
     border-radius: 50%;
     margin-right: 20px;
+
     &:checked {
       border-color: $dark-blue;
       transition: 0.2s;
     }
   }
+
   &::after {
     display: block;
     position: absolute;
@@ -378,7 +395,7 @@
     height: 15px;
     top: 12px;
     left: 12px;
-    background-color: #d22856;
+    background-color: $basic-red;
     border-radius: 50%;
   }
 }
@@ -389,6 +406,7 @@
 
 .competition-form__legend-name {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
     font-family: "Open Sans", "Arial", sans-serif;
@@ -409,21 +427,22 @@ input[type="radio"] {
   + label {
     position: relative;
     width: 269px;
-    margin-bottom: 1rem;
     user-select: none;
     margin-bottom: 62px;
-    &:before {
+
+    &::before {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 35px;
       height: 35px;
-      border: 2px solid #e5e5e5;
+      border: 2px solid $grey2;
       border-radius: 0.25rem;
       text-align: center;
     }
-    &:after {
+
+    &::after {
       content: "";
       position: absolute;
       transform: scale(0);
@@ -434,7 +453,7 @@ input[type="radio"] {
 
 input[type="checkbox"] {
   + label {
-    &:after {
+    &::after {
       background-color: transparent;
       content: "";
       display: block;
@@ -450,39 +469,39 @@ input[type="checkbox"] {
       transition: border-color 0.3s ease;
     }
   }
-  &:checked {
-    + label {
-      &:before {
-        content: "";
-      }
 
-      &:after {
-        content: "";
-        opacity: 1;
-      }
+  &:checked {
+    + label:before {
+      content: "";
+    }
+
+    :after {
+      content: "";
+      opacity: 1;
     }
   }
 }
 
 input[type="radio"] {
   + label {
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       border-radius: 50%;
     }
-    &:after {
+
+    &::after {
       top: 11px;
       left: 12px;
     }
   }
+
   &:checked {
-    + label {
-      &:before {
-        animation: borderscale 300ms ease-in;
-      }
-      &:after {
-        transform: scale(1);
-      }
+    + label:before {
+      animation: borderscale 300ms ease-in;
+    }
+
+    :after {
+      transform: scale(1);
     }
   }
 }
@@ -504,14 +523,44 @@ input[type="radio"] {
 }
 
 .competition-form__svg-wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 262px;
+    width: 59px;
+    height: 59px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   @media (min-width: $tablet-width) {
     display: block;
     width: 59px;
     height: 59px;
   }
+
   @media (min-width: $desktop-width) {
     width: auto;
     height: auto;
+  }
+
+  &--2 {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 262px;
+      width: 59px;
+      height: 59px;
+      background-color: #e5e5e5;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 
@@ -532,6 +581,7 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;

@@ -8,9 +8,11 @@
   line-height: 18px;
   color: $dark-blue;
   margin-right: 40px;
+
   &:hover path {
     fill: #283645;
   }
+
   &:active path {
     opacity: 0.3;
   }
@@ -22,11 +24,13 @@
   align-items: center;
   margin: 0 auto;
   padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     max-width: 660px;
     flex-direction: row;
     justify-content: space-between;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 940px;
   }
@@ -36,6 +40,7 @@
   &:active {
     opacity: 0.3;
   }
+
   &:hover path {
     fill: $basic-red;
   }
@@ -43,11 +48,14 @@
 
 .main-footer__desk-logo {
   display: none;
+
   @media (min-width: $desktop-width) {
     display: block;
+
     &:active {
       opacity: 0.3;
     }
+
     &:hover path {
       fill: $basic-red;
     }
@@ -63,6 +71,7 @@
 
 .main-footer__copyright {
   margin-bottom: 51px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }

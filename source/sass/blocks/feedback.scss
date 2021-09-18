@@ -8,10 +8,12 @@
   text-decoration: none;
   display: flex;
   justify-content: center;
+
   &:hover {
     text-decoration: underline;
     color: rgba(40, 54, 69, 1);
   }
+
   &:active {
     text-decoration: none;
     color: rgba(40, 54, 69, 0.3);
@@ -57,6 +59,7 @@
   display: flex;
   flex-direction: column;
   column-gap: 40px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
