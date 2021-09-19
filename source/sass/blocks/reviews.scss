@@ -34,7 +34,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 17px;
+    margin-bottom: -10px;
     font-size: 20px;
   }
 
@@ -50,9 +50,9 @@
   font-size: 14px;
   line-height: 30px;
   color: $dark-blue;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    order: -1;
     font-size: 18px;
   }
 }
@@ -70,7 +70,6 @@
 .reviews__item {
   display: flex;
   flex-direction: column;
-  position: relative;
 
   @media (min-width: $desktop-width) {
     padding-top: 192px;
@@ -89,7 +88,8 @@
     position: absolute;
     width: 60px;
     height: 42px;
-    left: -140px;
+    left: -144px;
+    top: 35%;
     font-size: 0;
     line-height: 0;
     border: none;
@@ -116,8 +116,9 @@
     border: none;
     display: block;
     width: 60px;
-    right: -140px;
     height: 42px;
+    right: -144px;
+    top: 35%;
     font-size: 0;
     line-height: 0;
     background-color: transparent;
@@ -137,10 +138,28 @@
 .reviews__arrow-left {
   top: 0;
   left: 0;
+
+  &:hover path {
+    fill: $dark-blue;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .reviews__arrow-right {
   right: 0;
+
+  &:hover path {
+    fill: $dark-blue;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .reviews__btn {
@@ -159,4 +178,32 @@
 .reviews__btn--active {
   background-color: $white;
   border: 3px solid $dark-blue;
+}
+
+.reviews__comment-wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.reviews__br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.reviews__br-2 {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

@@ -4,15 +4,18 @@
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: -15px 295px;
 
   @media (min-width: $tablet-width) {
     background-size: cover;
     background-image: url("../img/back-tablet.jpg");
+    background-position: 0px 310px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/back-desktop.jpg");
     background-repeat: no-repeat;
+    background-position: unset;
   }
 }
 

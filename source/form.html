@@ -104,10 +104,14 @@
   </header>
   <main class="main-form">
     <section class="competition">
-      <p class="competition__title">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
-        миль на вашу бонусную карту!
-      </p>
+      <div class="competition__title-wrapper">
+        <p class="competition__title">
+          Поделитесь своей историей и получите <br class="competition__br"> шанс выиграть <br class="competition__br-2">
+          ценный приз — 1000 <br class="competition__br">
+          миль на <br class="competition__br-3"> вашу бонусную карту! <br class="competition__br-2">
+        <p class="competition__title competition__title2-hidden">Пожалуйста, заполните форму ниже:</p>
+        </p>
+      </div>
       <form class="competition-form form-wrapper" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="competition-form__fieldset-name">
           <ul class="competition-form__list">
@@ -115,19 +119,21 @@
               <label class="competition-form__label" for="surname">
                 Фамилия:
               </label>
-              <input class="competition-form__input" type="text" id="surname" placeholder="Укажите фамилию *">
+              <input class="competition-form__input" type="text" name="surname" id="surname"
+                placeholder="Укажите фамилию *">
             </li>
             <li class="competition-form__item-name">
               <label for="name" class="competition-form__label">
                 Имя:
               </label>
-              <input class="competition-form__input" type="text" id="name" placeholder="Введите ваше имя *">
+              <input class="competition-form__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
             </li>
             <li class="competition-form__item-name">
               <label for="lastname" class="competition-form__label">
                 Отчество:
               </label>
-              <input class="competition-form__input" type="text" id="middle-name" placeholder="Ну и отчество тоже">
+              <input class="competition-form__input" type="text" name="lastname" id="middle-name"
+                placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </fieldset>
@@ -188,7 +194,8 @@
               <label for="phone" class="competition-form__label competition-form__label-address">Номер телефона
               </label>
               <div class="competition-form__svg-wrapper">
-                <input id="phone" class="competition-form__input-address" type="text" placeholder="Номер, пожалуйста">
+                <input id="phone" name="phone" class="competition-form__input-address" type="text"
+                  placeholder="Номер, пожалуйста">
                 <svg class="competition-form__icon-phone" width="20" height="19" viewBox="0 0 20 19" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -201,7 +208,8 @@
               <label for="phone" class="competition-form__label competition-form__label-address">Адрес почты
               </label>
               <div class="competition-form__svg-wrapper competition-form__svg-wrapper--2">
-                <input id="email" class="competition-form__input-address" type="email" placeholder="Введите почту *">
+                <input id="email" name="email" class="competition-form__input-address" type="email"
+                  placeholder="Введите почту *">
                 <svg class="competition-form__icon-mail" width="18" height="13" viewBox="0 0 18 13" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path

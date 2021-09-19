@@ -100,21 +100,29 @@
     </div>
   </header>
   <main class="catalog-main">
-    <p class="catalog-main__title container">Взгляните на фотографии, которые выкладывают пользователи!
-      Видите, как не хватает ваших?</p>
-    <picture class="catalog-main__picture-panorama">
-      <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg, img/panorama-desktop@2x.jpg 1.5x">
-      <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg, img/panorama-tablet@2x.jpg 1.5x">
-      <img class="catalog-main__phone-img" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 1.5x"
-        alt="Фото">
-    </picture>
-    <span class="catalog-main__span-title">Панорама дня</span>
+    <div class="catalog-main__title-wrapper">
+      <p class="catalog-main__title">Взгляните на фотографии, которые <br class="catalog-main__br-3">
+        выкладывают <br class="catalog-main__br-4"> пользователи! <br class="catalog-main__br-5"> Видите, как не хватает
+        ваших?</p>
+    </div>
+    <a class="catalog-main__panorama-link" href="">
+      <div class="catalog-main__span-wrapper"><span class="catalog-main__span-title">Панорама дня</span></div>
+      <picture class="catalog-main__picture-panorama">
+        <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg, img/panorama-desktop@2x.jpg 1.5x">
+        <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg, img/panorama-tablet@2x.jpg 1.5x">
+        <img class="catalog-main__phone-img" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 1.5x"
+          alt="Фото">
+      </picture>
+    </a>
     <div class="container">
       <div class="catalog-main__user-post">
         <span class="catalog-main__user-name">Анна</span>
         <span class="catalog-main__publication-date">(5 минут назад)</span>
         <p class="catalog-main__comment">
-          Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
+          Прыгать или нет? Напишите в <br class="catalog-main__br-2"> комментарии свой совет и <br
+            class="catalog-main__br-2"> смотрите прямую <br class="catalog-main__br">
+          трансляцию
+          в <br class="catalog-main__br-2"> перископе,
           задавайте свои
           вопросы!
         </p>
@@ -128,12 +136,14 @@
       </div>
       <ul class="users-photo">
         <li class="users-photo__item">
-          <picture>
-            <source media="(min-width:1200px)" srcset="img/photo-1-desktop.jpg">
-            <source media="(min-width:660px)" srcset="img/photo-1-tablet.jpg">
-            <img class="users-photo__phone-img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 1.5x"
-              alt="Изображение камеры и автомобиля">
-          </picture>
+          <a class="user-photo__picture-link" href="">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photo-1-desktop.jpg">
+              <source media="(min-width:660px)" srcset="img/photo-1-tablet.jpg">
+              <img class="users-photo__phone-img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 1.5x"
+                alt="Изображение камеры и автомобиля">
+            </picture>
+          </a>
           <div class="users-photo__item-wrapper">
             <span class="users-photo__user-name">Левон</span>
             <span class="users-photo__publication-date">(5 часов назад)</span>
@@ -150,12 +160,14 @@
           </div>
         </li>
         <li class="users-photo__item">
-          <picture>
-            <source media="(min-width:1200px)" srcset="img/photo-2-desktop.jpg">
-            <source media="(min-width:660px)" srcset="img/photo-2-tablet.jpg">
-            <img class="users-photo__phone-img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 1.5x"
-              alt="Изображение камеры и автомобиля">
-          </picture>
+          <a class="users-photo__picture-link" href="">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photo-2-desktop.jpg">
+              <source media="(min-width:660px)" srcset="img/photo-2-tablet.jpg">
+              <img class="users-photo__phone-img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 1.5x"
+                alt="Изображение камеры и автомобиля">
+            </picture>
+          </a>
           <div class="users-photo__item-wrapper">
             <span class="users-photo__user-name">Антон</span>
             <span class="users-photo__publication-date">(12 часов назад)</span>
@@ -170,12 +182,14 @@
           </div>
         </li>
         <li class="users-photo__item">
-          <picture>
-            <source media="(min-width:1200px)" srcset="img/photo-3-desktop.jpg">
-            <source media="(min-width:660px)" srcset="img/photo-3-tablet.jpg">
-            <img class="users-photo__phone-img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 1.5x"
-              alt="Изображение камеры и автомобиля">
-          </picture>
+          <a class="users-photo__picture-link" href="">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photo-3-desktop.jpg">
+              <source media="(min-width:660px)" srcset="img/photo-3-tablet.jpg">
+              <img class="users-photo__phone-img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 1.5x"
+                alt="Изображение камеры и автомобиля">
+            </picture>
+          </a>
           <div class="users-photo__item-wrapper">
             <span class="users-photo__user-name">Борис</span>
             <span class="users-photo__publication-date">(20 часов назад)</span>
@@ -192,12 +206,14 @@
           </div>
         </li>
         <li class="users-photo__item">
-          <picture>
-            <source media="(min-width:1200px)" srcset="img/photo-4-desktop.jpg">
-            <source media="(min-width:660px)" srcset="img/photo-4-tablet.jpg">
-            <img class="users-photo__phone-img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 1.5x"
-              alt="Изображение камеры и автомобиля">
-          </picture>
+          <a class="users-photo__picture-link" href="">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photo-4-desktop.jpg">
+              <source media="(min-width:660px)" srcset="img/photo-4-tablet.jpg">
+              <img class="users-photo__phone-img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 1.5x"
+                alt="Изображение камеры и автомобиля">
+            </picture>
+          </a>
           <div class="users-photo__item-wrapper">
             <span class="users-photo__user-name">Сергей</span>
             <span class="users-photo__publication-date">(25 часов назад)</span>
@@ -212,12 +228,14 @@
           </div>
         </li>
         <li class="users-photo__item">
-          <picture>
-            <source media="(min-width:1200px)" srcset="img/photo-5-desktop.jpg">
-            <source media="(min-width:660px)" srcset="img/photo-5-tablet.jpg">
-            <img class="users-photo__phone-img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 1.5x"
-              alt="Изображение камеры и автомобиля">
-          </picture>
+          <a class="users-photo__picture-link" href="">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photo-5-desktop.jpg">
+              <source media="(min-width:660px)" srcset="img/photo-5-tablet.jpg">
+              <img class="users-photo__phone-img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 1.5x"
+                alt="Изображение камеры и автомобиля">
+            </picture>
+          </a>
           <div class="users-photo__item-wrapper">
             <span class="users-photo__user-name">Максим</span>
             <span class="users-photo__publication-date">(40 часов назад)</span>
@@ -232,12 +250,14 @@
           </div>
         </li>
         <li class="users-photo__item">
-          <picture>
-            <source media="(min-width:1200px)" srcset="img/photo-6-desktop.jpg">
-            <source media="(min-width:660px)" srcset="img/photo-6-tablet.jpg">
-            <img class="users-photo__phone-img" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 1.5x"
-              alt="Изображение камеры и автомобиля">
-          </picture>
+          <a class="users-photo__picture-link" href="">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photo-6-desktop.jpg">
+              <source media="(min-width:660px)" srcset="img/photo-6-tablet.jpg">
+              <img class="users-photo__phone-img" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 1.5x"
+                alt="Изображение камеры и автомобиля">
+            </picture>
+          </a>
           <div class="users-photo__item-wrapper">
             <span class="users-photo__user-name">Надежда</span>
             <span class="users-photo__publication-date">(45 часов назад)</span>
@@ -298,7 +318,6 @@
                         <path d="M48 40H0V43H48V40Z" fill="#283645" />
                       </g>
                     </svg>
-
                   </button>
                   <div class="handle-form__scale-and-toggle">
                     <div class="handler-fill__scale handle-form__scale"></div>
@@ -320,7 +339,6 @@
                           fill="#283645" />
                       </g>
                     </svg>
-
                   </button>
                   <div class="handle-form__scale-and-toggle">
                     <div class="handler-contrast__scale handle-form__scale"></div>
@@ -328,15 +346,15 @@
                   </div>
                 </div>
               </fieldset>
+              <div class="handle-form__buttons-div">
+                <button class="handle-form__submit-button button" type="submit">Запостить</button>
+                <button class="handle-form__cancel-button button" type="reset">Отмена</button>
+              </div>
             </div>
             <div class="handle-form__scale-and-toggle-div-for-mobile">
               <div class="handle-form__scale handle-form__scale-for-mobile"></div>
               <div class="handle-form__toggle handle-form__toggle-for-mobile"
                 aria-label="Процент выбранного инструмента"></div>
-            </div>
-            <div class="handle-form__buttons-div">
-              <button class="handle-form__submit-button button" type="submit">Запостить</button>
-              <button class="handle-form__cancel-button button" type="reset">Отмена</button>
             </div>
           </div>
         </form>

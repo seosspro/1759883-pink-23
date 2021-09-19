@@ -24,8 +24,7 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    margin: 0;
-    margin-top: 67px;
+    margin-top: 0;
     margin-bottom: 75px;
   }
 }
@@ -49,7 +48,7 @@
 .handle-form__fieldsets-div {
   margin-top: 34px;
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 0;
   align-items: center;
   width: 208px;
   margin-left: 29px;
@@ -101,7 +100,6 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
   }
 
   &::before {
@@ -224,7 +222,7 @@
 
   .handle-form__buttons-div {
     grid-column: 2;
-    margin-top: 27px;
+    margin-top: 105px;
     margin-left: 14px;
 
     &::before {
@@ -237,7 +235,7 @@
   .handle-form__handler-contrast {
     position: relative;
     padding-bottom: 10px;
-    width: 270px;
+    width: 423px;
 
     &::after {
       position: absolute;
@@ -288,7 +286,6 @@
 
   .handle-form__buttons-div {
     display: flex;
-    margin-top: 106px;
     margin-left: 16px;
   }
 
