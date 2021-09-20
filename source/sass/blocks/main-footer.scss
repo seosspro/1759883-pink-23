@@ -7,7 +7,11 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-blue;
-  margin-right: 40px;
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+  }
 
   &:hover path {
     fill: #283645;

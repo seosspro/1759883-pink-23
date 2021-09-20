@@ -28,7 +28,7 @@
     margin-top: 360px;
 
     &::before {
-      top: -350px;
+      top: -330px;
       left: -40px;
       background-image: url("../img/phone-grey-screen@1x.png");
       background-repeat: no-repeat;
@@ -39,7 +39,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/phone-grey-screen@2x.png");
-        background-size: 292px auto;
+        background-size: 305px auto;
       }
     }
   }
@@ -54,7 +54,7 @@
 
     &::before {
       background-image: url("../img/phone-pink-screen@1x.png");
-      top: -350px;
+      top: -330px;
       left: -40px;
       background-repeat: no-repeat;
       content: "";
@@ -64,7 +64,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/phone-pink-screen@2x.png");
-        background-size: 292px auto;
+        background-size: 305px auto;
       }
     }
   }
@@ -83,7 +83,7 @@
     margin-top: 360px;
 
     &::before {
-      top: -350px;
+      top: -330px;
       left: -40px;
       background-image: url("../img/hello-phone-screen@1x.png");
       background-repeat: no-repeat;
@@ -94,7 +94,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/hello-phone-screen@2x.png");
-        background-size: 292px auto;
+        background-size: 305px auto;
       }
     }
   }
