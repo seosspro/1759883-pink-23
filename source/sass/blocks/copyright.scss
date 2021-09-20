@@ -8,6 +8,18 @@
 }
 
 .copyright__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-decoration: none;
+  color: $dark-blue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $desktop-min-width) {
+    font-size: 18px;
+  }
+
   &:hover {
     svg {
       fill: $dark-blue;

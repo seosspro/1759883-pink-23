@@ -1,3 +1,3 @@
 # Проект «Pink»
 
-* Вёрстка: [Александр Панков](https://htmlacademy.ru/profile/id1453733).
+- Вёрстка: [Дмитрий Крылов](https://htmlacademy.ru/profile/ruyanxz).
