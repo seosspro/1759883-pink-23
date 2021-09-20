@@ -3,10 +3,11 @@
   padding-bottom: 29px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-min-width) {
   .contacts-fieldset {
     padding-top: 8px;
   }
+
 
   .contacts-fieldset__phone-number-label,
   .contacts-fieldset__email-label {
@@ -47,7 +48,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-min-width) {
   .contacts-fieldset {
     padding-top: 4px;
     padding-bottom: 13px;

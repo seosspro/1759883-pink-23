@@ -3,7 +3,7 @@
   background-color: $grey;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-min-width) {
   .travel-fieldset__beach-label {
     order: 4;
   }

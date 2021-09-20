@@ -5,28 +5,11 @@
 }
 
 .handle-form__header {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
+  margin: 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   color: $dark-blue;
-  text-align: center;
-  margin-top: 49px;
-  margin-bottom: 52px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 73px;
-    margin-bottom: 78px;
-    font-size: 18px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 30px;
-    margin-top: 0;
-    margin-bottom: 75px;
-  }
 }
 
 .handle-form__inner-container {
@@ -48,7 +31,8 @@
 .handle-form__fieldsets-div {
   margin-top: 34px;
   display: flex;
-  margin-bottom: 0;
+  justify-content: space-between;
+  align-items: center;
   width: 208px;
   margin-left: 29px;
 }
@@ -71,17 +55,17 @@
 
 .handle-form__toggle {
   position: absolute;
-  top: -7px;
+  top: -5px;
   left: 5px;
   width: 14px;
   height: 14px;
-  border: 2px solid $basic-red;
+  border: 2px solid $light-red;
   background-color: $white;
   border-radius: 50%;
   cursor: pointer;
 
   &:active {
-    background-color: $basic-red;
+    background-color: $light-red;
   }
 }
 
@@ -94,12 +78,6 @@
   margin-top: 34px;
   padding: 39px 0 40px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-  }
 
   &::before {
     position: absolute;
@@ -115,8 +93,8 @@
 .handle-form__submit-button,
 .handle-form__cancel-button {
   background-color: inherit;
-  border: 3px solid $basic-red;
-  color: $basic-red;
+  border: 3px solid $light-red;
+  color: $light-red;
   border-radius: 30px;
 }
 
@@ -125,11 +103,7 @@
   border-color: $dark-blue;
   color: $dark-blue;
   opacity: 0.1;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
+  font-family: inherit;
 
   &:hover {
     opacity: 0.3;
@@ -143,14 +117,8 @@
 }
 
 .handle-form__submit-button {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-
   &:hover {
-    background-color: $basic-red;
+    background-color: $light-red;
     color: $white;
   }
 
@@ -164,7 +132,7 @@
   left: 213px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-min-width) {
   .handle-form {
     padding-top: 63px;
   }
@@ -221,11 +189,8 @@
 
   .handle-form__buttons-div {
     grid-column: 2;
+    margin-top: 27px;
     margin-left: 14px;
-
-    @media (min-width: $desktop-width) {
-      margin-top: 105px;
-    }
 
     &::before {
       display: none;
@@ -237,12 +202,12 @@
   .handle-form__handler-contrast {
     position: relative;
     padding-bottom: 10px;
-    width: 423px;
+    width: 270px;
 
     &::after {
       position: absolute;
       left: 0;
-      bottom: -10px;
+      bottom: 0;
       content: "";
       width: 275px;
       height: 1px;
@@ -269,7 +234,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-min-width) {
   .handle-form__outer-container {
     width: 960px;
     margin: 67px auto 0;
@@ -288,6 +253,7 @@
 
   .handle-form__buttons-div {
     display: flex;
+    margin-top: 106px;
     margin-left: 16px;
   }
 
@@ -328,16 +294,4 @@
   .handle-form__handler-contrast::after {
     display: none;
   }
-}
-
-.handle-form__handler-crop {
-  border: none;
-}
-
-.handle-form__handler-fill {
-  border: none;
-}
-
-.handle-form__handler-contrast {
-  border: none;
 }

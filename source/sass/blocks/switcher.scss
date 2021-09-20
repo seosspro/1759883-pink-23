@@ -15,10 +15,10 @@
 }
 
 .switcher--active svg {
-  fill: $basic-red;
+  fill: $light-red;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-min-width) {
   .switcher {
     width: 44px;
     padding: 0;
@@ -28,11 +28,11 @@
   }
 
   .switcher svg {
-    fill: $basic-red;
+    fill: $light-red;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-min-width) {
   .switcher {
     transform: none;
   }

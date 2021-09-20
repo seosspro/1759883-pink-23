@@ -17,14 +17,6 @@
   margin: 0;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-
-  @media (min-width: $tablet-width) {
-    font-size: 30px;
-    line-height: 40px;
-  }
 }
 
 .popup__message {
@@ -33,9 +25,6 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
 }
 
 .popup__bottom-row-success {
@@ -71,7 +60,7 @@
   margin-top: 0;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-min-width) {
   .popup {
     width: 460px;
     min-height: 372px;
@@ -114,7 +103,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-min-width) {
   .popup {
     width: 780px;
     min-height: 377px;

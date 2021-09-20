@@ -1,0 +1,20 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__link svg {
+  fill: $light-red;
+}
+
+.copyright__link {
+  &:hover {
+    svg {
+      fill: $dark-blue;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -36,7 +36,7 @@
 .check__input:focus + .check__radio,
 .check:active .check__box,
 .check:active .check__radio {
-  border-color: $basic-red;
+  border-color: $light-red;
 }
 
 .check__input:checked + .check__box {
@@ -53,7 +53,7 @@
     left: 10px;
     width: 15px;
     height: 15px;
-    background-color: $basic-red;
+    background-color: $light-red;
     border-radius: 50%;
   }
 }
